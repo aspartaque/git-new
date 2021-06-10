@@ -1,0 +1,112 @@
+$mobile-width: 320px
+$tablet-width: 910px
+$desktop-width: 1330px
+
+@mixin mobile
+  @media (max-width: #{$tablet-width - 1px})
+    @content
+
+@mixin tablet
+  @media (max-width: #{$desktop-width - 1px})
+    @content
+
+*
+  box-sizing: border-box
+
+body
+  font-family: "Gotham Pro", sans-serif
+  font-weight: normal
+  font-style: normal
+
+.l-page
+  display: grid
+  grid-template-rows: auto 1fr auto
+  min-height: 100vh
+  background: #F8F8F8
+
+.l-container
+  max-width: 1330px
+  padding: 0 15px
+  margin: 0 auto
+
+footer
+  color: #FFF
+  background: #02447E
+
+a
+  text-decoration: none
+  color: #DEEFFF
+
+.l-footer-top
+  display: flex
+  padding-bottom: 20px
+  border-bottom: 1px solid #076FCD
+  border-radius: 2px
+
+.l-footer__block
+  width: 400px
+
+  &:first-child
+    margin-right: 80px
+
+.l-footer__menu
+  display: flex
+  flex-direction: column
+
+.l-footer__menu__link
+  font-size: 14px
+  line-height: 20px
+  color: #DEEFFF
+  margin-bottom: 14px
+
+  &:last-child
+    margin-bottom: 0
+
+.footer__title
+  font-weight: bold
+  font-size: 18px
+  line-height: 17px
+  color: #FFFFFF
+  margin-bottom: 20px
+
+.l-footer__block__inner
+  margin-top: 40px
+
+.l-footer-bottom
+  margin-top: 30px
+  display: flex
+  justify-content: space-between
+  height: 80px
+  font-size: 14px
+  line-height: 20px
+  color: #DEEFFF
+
+.l-footer-bottom-left
+  display: flex
+
+.l-footer-copyright
+  margin-right: 50px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.l-footer-copyright__link
+  display: flex
+  flex-direction: column
+
+.l-footer-contacts, .l-footer-bottom-right
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.l-footer-socials
+  width: 208px
+  justify-content: space-between
+  display: flex
+
+.l-footer-socials__link
+  height: 18px
+
+.l-footer-developed
+  display: flex
+  justify-content: flex-end

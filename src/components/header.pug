@@ -1,0 +1,48 @@
+header
+  .l-header-top
+    .l-container
+      .l-header-grid
+        .l-header-top__location
+          img(src="./images/icons/location.svg", alt="Адрес")
+          span г. Якутск, ш. Покровское, 16 км, д. 2
+        .l-header-top__interactions
+          include ./language
+          a.l-interaction__visually(href="#")
+            .l-interaction__visually-button
+              include ./icons/AA.svg
+            span Версия для слабовидящих
+          ul.l-interaction__socials
+            li
+              a(href="#")
+                include ./icons/instagram.svg
+            li
+              a(href="#")
+                include ./icons/2gis.svg
+            li
+              a(href="#")
+                include ./icons/whatsapp.svg
+            li
+              a(href="#")
+                include ./icons/telegram.svg
+            li
+              a(href="#")
+                include ./icons/vk.svg
+            li
+              a(href="#")
+                include ./icons/twitter.svg
+  .l-header-middle
+    .l-container
+      .l-header-grid
+        a.l-header-middle__logo(href="/")
+          img(src="./images/logo.svg", alt="ВШМ РСЯ")
+          span Высшая школа музыки Республики Саха (Якутия)
+        .l-header-middle__worktime
+          .l-header-worktime__title Приемная комиссия
+          ul.l-header-worktime__content
+            li 9:00 до 20:00, Пн - Пт
+            li +7 (999) 999-99-99
+  .l-header-bottom
+    .l-container
+      .l-header-grid
+        .COMPONENT_NAV nav
+        .COMPONENT_SEARCH search

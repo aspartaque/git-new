@@ -1,0 +1,141 @@
+header
+
+.l-header
+.l-header-grid
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+
+.l-header-top
+  padding: 10px 0
+
+.l-header-top__location
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  span
+    margin-left: 10px
+    font-weight: normal
+    font-size: 14px
+    line-height: 13px
+    color: #076FCD
+
+.l-header-top__interactions
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+.l-interaction__visually
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  margin-left: 10px
+  transition: all .2s ease-out
+  &:hover
+    .l-interaction__visually-button
+      background: #076FCD
+    svg path
+      stroke: #f1f1f1
+      fill: #f1f1f1
+    span
+      color: #076FCD
+  span
+    font-weight: normal
+    font-size: 14px
+    line-height: 13px
+    color: #002543
+    margin-left: 10px
+    transition: color .2s ease-out
+
+.l-interaction__visually-button
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  width: 40px
+  height: 40px
+  align-items: center
+  justify-content: center
+  background: #F1F1F1
+  border-radius: 10px
+  transition: all .2s ease-out
+
+
+.l-interaction__socials
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  list-style: none
+  margin: 0 0 0 30px
+  padding: 0
+  li
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+    a
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 40px
+      height: 40px
+      background: #F1F1F1
+      border-radius: 10px
+      transition: all .2s ease-out
+      &:hover
+        background: #076FCD
+        svg path
+          fill: #f1f1f1
+
+.l-header-middle
+  background: #FFFFFF
+  padding: 30px 0
+.l-header-middle__logo
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  span
+    font-family: 'Philosopher', 'Gotham Pro', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 30px
+    line-height: 34px
+    color: #02447E
+    max-width: 390px
+    margin-left: 10px
+
+.l-header-middle__worktime
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-end
+  text-align: right
+
+.l-header-worktime__title
+  font-weight: bold
+  font-size: 18px
+  line-height: 17px
+  color: #02447E
+  margin-bottom: 20px
+
+.l-header-worktime__content
+  list-style: none
+  margin: 0
+  padding: 0
+  font-weight: normal
+  font-size: 18px
+  line-height: 17px
+  color: #002543
+  li
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+
+.l-header-bottom
+  background: #02447E
