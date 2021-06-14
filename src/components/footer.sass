@@ -19,16 +19,24 @@
 .l-footer__left-block__links-row
   display: flex
   flex-direction: row
+  li
+    list-style: none
+    line-height: normal
+    display: flex
+    align-items: center
+    svg
+      margin-top: 4px
+      margin-left: 8px
 
 .l-footer__left-block__links-row
   display: flex
   justify-content: space-between
-  margin-bottom: 30px
+  margin-bottom: 34px
   &:last-child
     margin-bottom: 0
 
 .l-footer__left-link
-  width: 200px
+  width: 150px
   display: flex!important
   padding-top: 0!important
   padding-bottom: 0!important
@@ -47,26 +55,6 @@
 
 .l-footer__left_icon
   margin-left: 10px
-
-.is-accordion-submenu-parent>a:after
-  display: block
-  width: 0
-  height: 0
-  border: 6px inset
-  content: ""
-  border-bottom-width: 0
-  border-top-style: solid
-  border-color: #1779ba transparent transparent
-  margin-left: 10px
-  margin-top: 3px
-  transition: .5s
-
-.is-accordion-submenu-parent[aria-expanded=true]>a:after
-  -webkit-transform: rotateX(180deg)
-  transform: rotateX(180deg)
-  -webkit-transform-origin: 50% 50%
-  transform-origin: 50% 50%
-
 
 ul.menu
   li
