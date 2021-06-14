@@ -1,4 +1,50 @@
 ﻿extends ../layouts/default.pug
 
 block page-main
-  .l-container Lorem text
+  .l-container
+    .block__ads
+      .block__ads-top
+        .block__ads-title Объявления
+        .block__ads-link 
+          a Все объявления
+            include ./icons/dropdown-right.svg
+      .block__ads-main
+        .block__ads__main-descr
+          .block__ads__main-title Итоги Международного конкурса «Надежда»
+          .block__ads__main-text 24 апреля в Сибирском государственном институте искусств имени Дмитрия Хворостовского состоялось Торжественное закрытие XII Международного музыкально-театрального конкурса-фестиваля «Надежда». На церемонии закрытия были объявлены имена лауреатов и дипломантов номинации...
+          a.block__ads__main-button(href="#") Подробнее
+          
+        .block__ads__main-img
+          img(src="/images/main.jpg")
+      
+      .block__ads-row
+        .block__ads-card
+          .block__ads__card-img 
+            img(src="/images/card.jpg")
+          .block__ads__card-descr 
+            a.block__ads__card-title Lorem ipsum dolor sit amet
+            .block__ads__card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          
+        .block__ads-card
+          .block__ads__card-img 
+            img(src="/images/card.jpg")
+          .block__ads__card-descr
+            a.block__ads__card-title Lorem ipsum dolor sit amet
+            .block__ads__card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            
+        .block__ads-card
+          .block__ads__card-img 
+            img(src="/images/card.jpg")
+          .block__ads__card-descr
+            a.block__ads__card-title Lorem ipsum dolor sit amet
+            .block__ads__card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        
+      .block__ads-descr
+        .block__ads-descr-left
+          .block__ads__descr-title Высшая школа музыки Республики Саха (Якутия)
+          .block__ads__descr-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          a.block__ads__descr-button(href="#") Узнать больше
+        .block__ads-descr-right
+          .block__ads__descr-img
+            img(src="/images/descr.jpg")
+              
