@@ -179,16 +179,6 @@ a.bottom__info-icon
 .l-footer__bottom__developed-text
   margin-right: 5px
 
-
-/*FOUNDATION CLASSES*/
-
-.is-submenu-item
-  padding-top: 20px
-
-.is-accordion-submenu-parent
-  max-width: 200px
-
-
 /*DEMO VERSION FOOTER LINKS COLOR*/
 
 a.icon-instagram
@@ -227,5 +217,140 @@ a.icon-twitter
   &:hover
     fill: #1DA1F2
 
+.l-footer-mobile
+  display: none
 
-  /**/
+  /*ADAPTIVE-TABLET*/
+
+@media screen and (max-width: 960px)
+  footer
+    .l-container
+      padding: 0 40px 0 40px
+
+  .l-footer-left
+    width: 100%
+
+  .l-footer__left-block__links-row
+    margin-left: 0
+
+  .l-footer__right-info
+    font-size: 14px
+    line-height: 20px
+
+  .bottom__info-text
+    @media screen and (max-width: 780px)
+      font-size: 12px
+      line-height: 14px
+
+  .l-footer-left__bottom-info
+    a
+      @media screen and (max-width: 780px)
+        font-size: 12px
+        line-height: 14px
+
+/*ADAPTIVE-MOBILE*/
+@media screen and (max-width: 414px)
+
+  .l-footer
+    display: none
+
+  .block__ads-descr-mobile
+    display: block
+
+  .l-footer-mobile
+    display: block
+    .l-footer-top
+      flex-direction: column
+
+  .l-footer__block__links
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    text-align: center
+    ul
+      li
+        list-style: none
+        margin-bottom: 40px
+        &:last-child
+          margin-bottom: 0
+        a
+          justify-content: center
+          svg
+            margin-left: 7px
+
+  .l-footer__contacts__icon
+    display: flex
+    justify-content: center
+    margin-top: 40px
+
+  .l-footer__contacts
+    display: flex
+    justify-content: center
+    margin-top: 10px
+    .l-footer__contacts-title
+      font-weight: bold
+      font-size: 18px
+      line-height: 20px
+
+  .l-footer__info
+    text-align: center
+    display: flex
+    flex-direction: column
+    margin-top: 10px
+    span
+      font-size: 14px
+
+  .l-footer__links
+    display: flex
+    justify-content: space-around
+    margin-top: 40px
+
+  .l-footer-left__bottom-info
+    a
+      margin-top: 10px
+      text-decoration: underline
+
+  .l-footer-left__bottom__info-links
+    display: flex
+    flex-direction: column
+    margin-top: 60px
+    svg
+      fill: #FFFFFF
+    a
+      text-decoration: none
+      span
+        font-size: 14px
+
+  a.bottom__info-icon
+    margin-top: 10px
+    text-align: center
+    max-width: 250px
+
+  .l-footer-left__bottom-info
+    align-items: center
+    margin-left: 0
+    a
+      font-size: 14px
+
+  .l-footer-button
+    margin-top: 30px
+    margin-left: auto
+    margin-right: auto
+
+  .l-footer-top__bottom
+    padding-bottom: 40px
+    border-bottom: 1px solid #076FCD
+
+  .l-footer-bottom
+    display: flex
+    flex-direction: column
+    width: 80%
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    height: auto
+
+  .l-footer__bottom-developed
+    display: flex
+    justify-content: center
+    margin-top: 30px

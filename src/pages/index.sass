@@ -46,6 +46,7 @@
 .block__ads__main-descr
   padding: 60px 40px 60px 40px
   max-width: 880px
+  width: 100%
 
 .block__ads__main-title
   font-weight: bold
@@ -84,6 +85,7 @@
   img
     border-bottom-right-radius: 20px
     border-top-right-radius: 20px
+    max-width: 420px
 
 /* BLOCK ADS CARD (3)*/
 
@@ -167,3 +169,252 @@
   &:hover
     background: #02447E
     color: white
+
+.block__ads-link-mobile
+  display: none
+
+.block__ads-descr-mobile
+  display: none
+
+/*ADAPTIVE-TABLET*/
+
+@media screen and (max-width: 960px)
+  .l-page
+    display: block
+
+  .block__ads
+    max-width: 880px
+    margin: 0 auto
+
+  .block__ads__main-descr
+    padding: 40px 30px
+    position: relative
+
+  .block__ads__main-button
+    position: absolute
+    bottom: 30px
+    left: 30px
+    margin-top: 0
+
+  .block__ads__main-title
+    font-size: 20px
+    line-height: 30px
+    @media screen and (max-width: 780px)
+      font-size: 18px
+      line-height: 20px
+
+  .block__ads__main-text
+    font-size: 14px
+    line-height: 24px
+    @media screen and (max-width: 780px)
+      font-size: 14px
+      line-height: 16px
+
+  .block__ads__main-img
+    max-width: 420px
+    height: 100%
+    width: 100%
+    a
+      img
+        max-width: 420px
+        height: 100%
+        width: 100%
+
+  .block__ads-row
+    display: grid
+    grid-template-rows: auto 1fr
+    grid-template-columns: 1fr 1fr
+    max-width: 850px
+    margin: 0 auto
+    grid-gap: 20px
+    margin-top: 20px
+
+  .block__ads-card
+    max-width: 420px
+    width: 100%
+
+  .block__ads-descr-left
+    padding-right: 20px
+
+  .block__ads__descr-title
+    font-size: 26px
+    line-height: 35px
+    @media screen and (max-width: 780px)
+      font-size: 20px
+      line-height: 25px
+
+  .block__ads__descr-text
+    font-size: 14px
+    line-height: 24px
+    @media screen and (max-width: 780px)
+      font-size: 14px
+      line-height: 18px
+
+  .block__ads-descr-left
+    max-width: 620px
+    width: 100%
+
+  .block__ads-descr-right
+    max-width: 430px
+    width: 100%
+
+  .block__ads__descr-img
+    max-width: 430px
+    max-height: 420px
+    width: 100%
+    a
+      picture
+        source
+          max-width: 430px
+          width: 100%
+          max-height: 420px
+        img
+          max-width: 430px
+          width: 100%
+          max-height: 420px
+
+/*SWIPER DESCKTOP*/
+.block__ads-row-mobile
+  display: none
+
+/*ADAPTIVE-MOBILE*/
+
+@media screen and (max-width: 414px)
+  .block__ads-main
+    display: none
+
+  .block__ads
+    padding-top: 20px
+
+  .block__ads-top
+    justify-content: center
+
+  .block__ads-link
+    display: none
+
+  .block__ads-row
+    display: flex
+    flex-direction: column
+
+  .block__ads-descr
+    display: none
+
+  .block__ads-row
+    display: none
+
+  .block__ads-row-mobile
+    margin-top: 30px
+    display: block
+
+  .block__ads-card-mobile
+    padding: 0 5px 0 5px
+    &:last-child
+      margin-right: 0
+
+  .block__ads__card-img-mobile
+
+  .block__ads__card-descr-mobile
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-top: 20px
+
+  a.block__ads__card-title-mobile
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #076FCD
+
+  .block__ads__card-text-mobile
+    margin-top: 10px
+    font-size: 14px
+    line-height: 24px
+    text-align: center
+    color: #002543
+
+  .slick-dotted.slick-slider
+    margin-bottom: 0
+
+  ul.slick-dots
+    margin-top: 15px
+    position: static
+    li.slick-active
+      width: 10px
+      height: 10px
+      button
+        padding: 0
+        width: 10px
+        height: 10px
+        &:before
+          content: ""
+          background: #828282
+          opacity: 1
+          width: 10px
+          height: 10px
+          border-radius: 100%
+
+  ul.slick-dots
+    li
+      width: 10px
+      height: 10px
+      button
+        padding: 0
+        width: 10px
+        height: 10px
+        &::before
+          content: ""
+          background: #828282
+          opacity: 0.7
+          width: 6px
+          height: 6px
+          border-radius: 100%
+
+  .block__ads-link-mobile
+    display: flex
+    justify-content: center
+    margin-top: 30px
+    a
+      font-weight: normal
+      font-size: 16px
+      line-height: 30px
+      color: #076FCD
+      svg
+        margin-left: 5px
+
+  .block__ads-descr-mobile
+    margin-top: 60px
+    margin-bottom: 60px
+
+  .block__ads-descr-left
+    padding: 0
+    text-align: left
+
+  .block__ads__descr-title
+    font-family: Gotham Pro
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 30px
+    color: #076FCD
+
+  .block__ads__descr-text
+    font-size: 14px
+    line-height: 24px
+    color: #002543
+
+  a.block__ads__descr-button
+    margin-top: 20px
+    width: 100%
+    max-width: 100%
+
+  .block__ads-descr-right
+
+  .block__ads__descr-img
+    margin-top: 20px
+    height: auto
+    a
+      picture
+        source
+
+        img
