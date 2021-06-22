@@ -1,3 +1,140 @@
+.block__info
+  margin-top: 80px
+
+.block__info-row
+  display: flex
+  justify-content: space-between
+
+.block__info-card
+  background: #FFFFFF
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  position: relative
+  padding: 40px 30px 30px 30px
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 310px
+  width: 100%
+  height: 390px
+  &::after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 17px
+    left: 0
+    top: 0
+    background: #076FCD
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+
+.block__card-img
+  svg
+    g
+      clip-path: url(../components/icons/)
+
+.block__card-title
+  margin-top: 20px
+  span
+    font-weight: normal
+    font-size: 30px
+    line-height: 29px
+    color: #002543
+
+.block__card-text
+  margin-top: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  .block__card-link
+    text-align: center
+    a
+      font-weight: normal
+      font-size: 17px
+      line-height: 30px
+      text-align: center
+      color: #076FCD
+      text-align: center
+
+.block__card-button
+  margin-top: 20px
+  max-width: 200px
+  width: 100%
+  height: 50px
+  background: #076FCD
+  border-radius: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  span
+    font-weight: normal
+    font-size: 14px
+    line-height: 24px
+    color: #FFFFFF
+
+.block__info-row-mobile
+  display: none
+
+@media screen and (max-width: 960px)
+  .block__info-card
+    max-width: 205px
+    width: 100%
+    height: 360px
+    padding: 40px 0px 20px 0px
+
+  .block__card-title
+    span
+      font-size: 20px
+      line-height: 19px
+      text-align: center
+
+  .block__card-text
+    margin-top: 10px
+    .block__card-link
+      a
+        font-size: 14px
+        line-height: 24px
+
+  .block__card-button
+    max-width: 160px
+    width: 100%
+    height: 50px
+
+@media screen and (max-width: 800px)
+  .block__info-row
+    display: grid
+    grid-template-columns: 200px 200px
+    grid-gap: 20px
+    justify-content: center
+
+@media screen and (max-width: 414px)
+  .block__info-row
+    display: none
+
+  .block__info-row-mobile
+    display: block
+
+  .block__info-card
+    max-width: 290px
+    width: 100%
+    height: 390px
+    margin-left: auto
+    margin-right: auto
+
+  .block__card-text
+    margin-top: 20px
+
+  .slick-initialized .slick-slide
+    display: flex
+
+  .block__mobile-container
+    padding-left: 10px
+    padding-right: 10px
+
+/* BLOCK ADS */
+
 .block__ads
   padding-top: 80px
 
@@ -384,7 +521,8 @@
 
   .block__ads-descr-mobile
     margin-top: 60px
-    margin-bottom: 60px
+    margin-bottom: 61px
+    display: block
 
   .block__ads-descr-left
     padding: 0
