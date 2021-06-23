@@ -1,0 +1,50 @@
+.l-page-static
+  display: flex
+  margin: 40px 0 100px
+
+.l-page-wrapper
+  display: flex
+  flex-direction: column
+  flex: 1
+.l-page-content
+  background: #FFFFFF
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  overflow: hidden
+  position: relative
+  padding: 30px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    background: #076FCD
+    width: 100%
+    height: 9px
+
+.l-page-title
+  font-weight: bold
+  font-size: 30px
+  line-height: 30px
+  color: #076FCD
+  margin: 0 0 30px
+
+.l-page-content__inner
+  h3
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #02447E
+    margin: 0 0 20px
+  p
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: #002543

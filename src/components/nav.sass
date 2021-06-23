@@ -1,0 +1,43 @@
+.l-navigation
+  position: unset
+  &.dropdown.menu>li+li
+    margin-left: 25px
+
+  &.dropdown.menu>li>a
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: center
+    height: 100%
+    padding: 0px 10px
+    transition: background .2s ease-out, color .2s ease-out
+    &:hover
+      background: #076fcd
+      color: #fff
+  &.dropdown.menu>li.is-active
+    background: #076fcd
+    transition: background .2s ease-out, color .2s ease-out
+    &>a
+      color: #fff
+      &::after
+        border-color: #fff transparent transparent
+
+  &.dropdown.menu>li.is-dropdown-submenu-parent
+    position: unset
+
+  &.dropdown.menu>li.is-dropdown-submenu-parent>a
+    padding-right: 21px
+
+  &.dropdown.menu>li.opens-right>.is-dropdown-submenu
+    left: 0
+    right: 0
+    border: 0
+    background: #076fcd
+  &.dropdown .is-dropdown-submenu a
+    // padding: 0
+
+.l-navigation__submenu
+  margin: 30px 0
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  // grid-gap: 20px

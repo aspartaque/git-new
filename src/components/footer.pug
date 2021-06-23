@@ -15,7 +15,7 @@ footer
               li
                 a.l-footer__left-link(href="#") Обращения
                   include ./icons/dropdown.svg
-                
+
             ul.l-footer__left-block__links-row
               li
                 a.l-footer__left-link(href="#") Абитуриентам
@@ -26,16 +26,16 @@ footer
               li
                 a.l-footer__left-link(href="#") Коронавирус
                   include ./icons/dropdown.svg
-                  
+
           .l-footer-left__bottom
-            button(onclick="" type='button' class='l-footer-button' value="") Отправить обращение
+            button.l-footer-button(onclick="", type="button", value="") Отправить обращение
             .l-footer-left__bottom-info
-                .l-footer-left__bottom__info-links
-                  a.bottom__info-icon(href="#")
-                    include ./icons/footer_info.svg 
-                    span.bottom__info-text Сведения об образовательной организации
-                a(href="#") Политика конфиденциальности
-                
+              .l-footer-left__bottom__info-links
+                a.bottom__info-icon(href="#")
+                  include ./icons/footer_info.svg
+                  span.bottom__info-text Сведения об образовательной организации
+              a(href="#") Политика конфиденциальности
+
         //- Footer Top Right
         .l-footer-right
           .l-footer__right-contacts
@@ -59,7 +59,7 @@ footer
               include ./icons/footer_vk.svg
             a.icon-twitter(href="#")
               include ./icons/footer_twitter.svg
-              
+
       //- Footer Bottom
       .l-footer-bottom
         .l-footer__bottom-copyright
@@ -68,7 +68,4 @@ footer
           a.l-footer__bottom__developed-link(href="#")
             span.l-footer__bottom__developed-text Разработано в
             include ./icons/footer_logo.svg
-            
-include footer-mobile.pug          
-            
-         
+include footer-mobile

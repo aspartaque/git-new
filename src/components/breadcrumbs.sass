@@ -1,0 +1,23 @@
+.l-breadcrumbs
+  margin-bottom: 20px
+  
+.breadcrumbs li
+  font-weight: normal
+  font-size: 12px
+  line-height: 11px
+  color: #828282
+  text-transform: none
+
+.breadcrumbs a
+  color: #828282
+  transition: color .2s ease-out
+  &:hover
+    color: #1779ba
+    // text-decoration: none
+
+.breadcrumbs li:not(:last-child)::after
+  content: '›'
+  margin: 0 5px
+
+.breadcrumbs .disabled
+  color: #828282
