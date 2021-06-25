@@ -2,3 +2,42 @@
   display: flex
   width: 310px
   margin-right: 20px
+
+.l-sidebar-navigation
+  list-style: none
+  padding: 0 0 40px
+  margin: 0
+  border-bottom: 1px solid #CFCFCF
+
+.l-sidebar-item
+  margin-bottom: 20px
+  &:last-child
+    margin-bottom: 0
+  &.is-active
+    position: relative
+    &::before
+      content: ''
+      left: -15px
+      top: 0
+      right: 0
+      bottom: 0
+      position: absolute
+      background: #F8F8F8
+      border-left: 4px solid #076FCD
+    .l-sidebar-item__link
+      font-weight: bold
+      color: #076FCD
+      padding: 10px 0
+      z-index: 1
+      position: relative
+.l-sidebar-item__link
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: #002543
+  transition: color .2s ease-out
+  &:hover
+    color: #076FCD
