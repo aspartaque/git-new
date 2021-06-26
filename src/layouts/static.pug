@@ -24,7 +24,10 @@ html(lang="ru")
     script(src="./js/jquery-3.6.0.min.js")
     script(src="./js/foundation.min.js")
     script(src="./js/slick.min.js")
-    //- script(src="./js/vue.js")
+    script(src="./js/vue.min.js")
+    script(src="./js/vuejs-datepicker.min.js")
+    script(src="./js/vuejs-datepicker-translation-ru.min.js")
+
     //- script(src="./js/swiper-bundle.min.js")
     //- script(src="./js/gsap.min.js")
     //- script(src="./js/hystmodal.min.js")
@@ -44,8 +47,10 @@ html(lang="ru")
               include ../components/breadcrumbs
 
               .l-page-content
-                h1.l-page-title #{title}
-
+                .l-page-header
+                  h1.l-page-title #{title}
+                  if datepicker
+                    include ../components/datepicker
                 .l-page-content__inner
                   block page-content
 
@@ -53,3 +58,5 @@ html(lang="ru")
 
     script.
       $(document).foundation();
+    
+    script(src="./js/main.js")

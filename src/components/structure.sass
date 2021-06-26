@@ -1,0 +1,37 @@
+.l-structure-list
+  list-style: none
+  &>li
+    position: relative
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+    &::before
+      content: ''
+      position: absolute
+      left: -20px
+      top: 9px
+      background: #076FCD
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      display: block
+    a
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 28px
+      text-decoration-line: underline
+      color: #076FCD
+.l-structure-sublist
+  margin-top: 5px
+  list-style-type: circle
+  &>li
+    &::marker
+      color: #828282
+    a
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 30px
+      text-decoration-line: underline
+      color: #076FCD

@@ -1,0 +1,22 @@
+.l-datepicker
+  form#period_selector_news.period-selector(action="", method="get")
+    .period-selector__datepickers
+      .period-selector__datepicker
+        vuejs-datepicker(
+          :language="ru",
+          name="start_date",
+          v-model="start",
+          format="dd.MM.yyyy",
+          placeholder="дд.мм.гггг"
+        )
+      .period-selector__separator
+      .period-selector__datepicker
+        vuejs-datepicker(
+          :language="ru",
+          name="end_date",
+          v-model="end",
+          format="dd.MM.yyyy",
+          placeholder="дд.мм.гггг"
+        )
+    .period-selector__submit
+      button.button(type="submit") Показать

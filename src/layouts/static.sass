@@ -6,6 +6,7 @@
   display: flex
   flex-direction: column
   flex: 1
+
 .l-page-content
   background: #FFFFFF
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
@@ -29,12 +30,18 @@
     width: 100%
     height: 9px
 
+.l-page-header
+  margin: 0 0 30px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+
 .l-page-title
   font-weight: bold
   font-size: 30px
   line-height: 30px
   color: #076FCD
-  margin: 0 0 30px
 
 .l-page-content__inner
   h3
@@ -48,3 +55,34 @@
     font-size: 16px
     line-height: 28px
     color: #002543
+  img
+    border-radius: 10px
+    width: 100%
+    object-fit: cover
+
+.l-table-double
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+
+.l-table-tr
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  margin-bottom: 20px
+  &:last-child
+    margin-bottom: 0
+
+.l-table-img
+  margin-right: 20px
+  max-width: 300px
+  width: 100%
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+.l-table-content
+  width: calc( 100% - 300px )
+  p:last-child
+    margin-bottom: 0

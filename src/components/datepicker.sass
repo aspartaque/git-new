@@ -1,0 +1,126 @@
+.period-selector
+    display: flex
+    align-items: center
+
+    &__label
+        width: 224px
+        flex-shrink: 0
+        font-size: 14px
+        line-height: 24px
+        color: #3B3E4F
+
+    &__datepickers
+        flex-grow: 1
+        width: 100%
+        border: 1px solid #EFF1F8
+        height: 48px
+        border-radius: 5px 0 0 5px
+        display: flex
+        align-items: center
+
+    &__datepicker
+        position: relative
+        width: 160px
+        flex-shrink: 0
+
+        &::before
+            content: ''
+            position: absolute
+            width: 24px
+            height: 24px
+            top: 10px
+            left: 16px
+            background:
+                image: url('../images/icons/calendar.svg')
+
+        input
+            width: 100%
+            padding-left: 48px
+            padding-right: 19px
+            font-size: 14px
+            color: #9599AD
+            height: 46px
+            border: none
+            background: none
+
+            &:focus
+                outline: none
+
+    &__separator
+        width: 100%
+        height: 1px
+        background: #EFF1F8
+
+    &__submit
+        width: 165px
+        flex-shrink: 0
+        margin-left: -5px
+        position: relative
+        z-index: 100
+
+        .button
+            height: 48px
+            width: 100%
+
+            &:hover
+                background: #fff
+
+.vdp-datepicker
+    &__calendar
+        box-shadow: 0px 10px 30px rgba(48, 65, 150, 0.1)
+        background: #ffffff
+        border: 1px solid #EFF1F8 !important
+        border-radius: 5px
+        font-size: 14px
+        padding: 24px 32px
+        color: #9599AD
+        // width: 400px !important
+
+        .cell
+            height: 32px !important
+            line-height: 32px !important
+            border-radius: 3px
+            color: #9599AD
+            // margin: 4px
+
+            &.day-header
+                font-size: 14px !important
+
+            &.day
+                // margin: 4px
+                // border: 4px solid transparent
+
+
+            &:not(.blank):not(.disabled).day:hover,
+            &:not(.blank):not(.disabled).month:hover,
+            &:not(.blank):not(.disabled).year:hover,
+                border: 1px solid transparent !important
+                background: #EFF1F8
+
+
+            &.selected
+                background: #304196 !important
+                color: #fff
+
+    .prev::after,
+    .next::after
+        content: none !important
+
+    .next::before,
+    .prev::before
+        content: ''
+        width: 20px
+        height: 20px
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-left: -10px
+        margin-top: -10px
+        background:
+            image: url('../images/icons/arrow-gray.svg')
+            position: center
+            repeat: no-repeat
+        transform: rotate(270deg)
+
+    .prev::before
+        transform: rotate(90deg)
