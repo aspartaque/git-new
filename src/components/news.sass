@@ -1,0 +1,68 @@
+.l-news-list
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr))
+  grid-gap: 30px
+
+.l-article
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  border: 1px solid #F1F1F1
+  border-radius: 10px
+  overflow: hidden
+  position: relative
+
+.l-article-date
+  position: absolute
+  left: 0
+  top: 0
+  background: #076FCD
+  border-radius: 10px 0px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  padding: 10px 20px
+  font-weight: normal
+  font-size: 18px
+  line-height: 17px
+  color: #FFFFFF
+  span
+    margin-left: 10px
+
+.l-article-picture
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  border-radius: 0 0 10px 10px
+  a
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex: 1 1 100%
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.l-article-content
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  margin: 20px
+
+.l-article-title
+  font-weight: bold
+  font-size: 18px
+  line-height: 25px
+  color: #076FCD
+
+.l-article-anounce
+  margin-top: 10px
+  font-weight: normal
+  font-size: 14px
+  line-height: 24px
+  color: #002543

@@ -9,62 +9,6 @@
         line-height: 24px
         color: #3B3E4F
 
-    &__datepickers
-        flex-grow: 1
-        width: 100%
-        border: 1px solid #EFF1F8
-        height: 48px
-        border-radius: 5px 0 0 5px
-        display: flex
-        align-items: center
-
-    &__datepicker
-        position: relative
-        width: 160px
-        flex-shrink: 0
-
-        &::before
-            content: ''
-            position: absolute
-            width: 24px
-            height: 24px
-            top: 10px
-            left: 16px
-            background:
-                image: url('../images/icons/calendar.svg')
-
-        input
-            width: 100%
-            padding-left: 48px
-            padding-right: 19px
-            font-size: 14px
-            color: #9599AD
-            height: 46px
-            border: none
-            background: none
-
-            &:focus
-                outline: none
-
-    &__separator
-        width: 100%
-        height: 1px
-        background: #EFF1F8
-
-    &__submit
-        width: 165px
-        flex-shrink: 0
-        margin-left: -5px
-        position: relative
-        z-index: 100
-
-        .button
-            height: 48px
-            width: 100%
-
-            &:hover
-                background: #fff
-
 .vdp-datepicker
     &__calendar
         box-shadow: 0px 10px 30px rgba(48, 65, 150, 0.1)
@@ -124,3 +68,71 @@
 
     .prev::before
         transform: rotate(90deg)
+
+.l-datepicker-button
+  background: #076FCD
+  border-radius: 10px
+  cursor: pointer
+  font-weight: normal
+  font-size: 14px
+  line-height: 14px
+  color: #FFFFFF
+  padding: 13px 26px
+  transition: background-color .2s ease-out
+  position: relative
+  &:hover
+    background: #02447e
+
+.period-selector__submit
+  margin-left: -10px
+
+.period-selector__datepickers
+  flex-grow: 1
+  width: 100%
+  border: 1px solid #E4E6E9
+  border-right: 0
+  border-radius: 10px 0 0 10px
+  display: flex
+  align-items: center
+  position: relative
+
+.period-selector__datepicker
+  position: relative
+  width: 160px
+  flex-shrink: 0
+
+  &::before
+    content: ''
+    position: absolute
+    width: 20px
+    height: 20px
+    top: calc(50% - 10px)
+    left: 20px
+    background:
+      image: url('../images/icons/calendar.svg')
+
+  input
+    width: 100%
+    padding-left: 50px
+    padding-right: 20px
+    font-size: 14px
+    color: #9599AD
+    height: 38px
+    border: none
+    background: none
+    margin-bottom: 0
+    box-shadow: unset
+    cursor: pointer
+    &:focus
+      outline: none
+      box-shadow: unset
+      border: 0
+      border-radius: 12px
+      background: transparent
+
+.period-selector__separator
+  position: absolute
+  left: calc(50% - 25px)
+  width: 30px
+  height: 1px
+  background: #E4E6E9
