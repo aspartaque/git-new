@@ -1,5 +1,80 @@
+/* BLOCK BANNER */
+
+.block__banner
+  .banner-slider
+    height: 500px
+    .swiper-container
+      .swiper-wrapper
+        .swiper-slide
+          .banner__slide
+            position: relative
+            img
+              height: 500px
+              width: 1400px
+
+            .banner__slide-title
+              span
+                position: absolute
+                left: 70px
+                top: 180px
+                font-weight: bold
+                font-size: 60px
+                line-height: 57px
+                color: #FFFFFF
+
+            .banner__slide-descr
+              span
+                position: absolute
+                left: 70px
+                top: 242px
+                font-weight: normal
+                font-size: 18px
+                line-height: 17px
+                color: #FFFFFF
+
+            .banner__slide-button
+              display: flex
+              justify-content: center
+              align-items: center
+              position: absolute
+              width: 200px
+              height: 50px
+              left: 70px
+              bottom: 170px
+              background: #076FCD
+              border-radius: 10px
+              font-weight: normal
+              font-size: 14px
+              line-height: 13px
+              color: #FFFFFF
+
+.swiper-pagination
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 50px
+
+  .swiper-pagination-bullet
+    background: #FFFFFF
+    opacity: 0.7
+
+  .swiper-pagination-bullet-active
+    background: #FFFFFF
+    opacity: 1
+    width: 10px
+    height: 10px
+
+.l-navigation.dropdown.menu
+  li.opens-right
+    .is-dropdown-submenu
+      z-index: 10
+
+
+/* BLOCK INFO */
+
 .block__info
   margin-top: 80px
+  padding-bottom: 80px
 
 .block__info-row
   display: flex
@@ -132,6 +207,80 @@
   .block__mobile-container
     padding-left: 10px
     padding-right: 10px
+
+
+
+
+/* BLOCK NEWS */
+
+.block__news
+  background: #FFFFFF
+  padding-bottom: 60px
+
+  .block__news-main
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+
+    .block__news-left
+      width: 50%
+
+      .block__news-card
+        width: 640px
+        height: 545px
+        background: #FFFFFF
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 20px
+        padding: 10px
+
+        .block__news-img
+          position: relative
+          a
+            img
+              border-radius: 10px
+
+          .block__news__img-date
+            position: absolute
+            left: 0
+            top: 0
+            width: 201px
+            height: 40px
+            background: #076FCD
+            border-radius: 10px 0px
+            display: flex
+            align-items: center
+            justify-content: center
+            span
+              font-weight: normal
+              font-size: 18px
+              line-height: 17px
+              color: #FFFFFF
+            svg
+              fill: white
+              margin-right: 10px
+
+        .block__news-title
+          margin-left: 10px
+          margin-top: 30px
+          a
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: #076FCD
+
+        .block__news-text
+          margin-left: 10px
+          margin-top: 10px
+          span
+            font-weight: normal
+            font-size: 18px
+            line-height: 30px
+            color: #002543
+
+
+
+
+
 
 /* BLOCK ADS */
 

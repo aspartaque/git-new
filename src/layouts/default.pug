@@ -15,7 +15,7 @@ html(lang="ru")
     link(rel="stylesheet", href="./css/foundation.min.css")
     link(rel="stylesheet", href="./css/slick.css")
     link(rel="stylesheet", href="./css/slick-theme.css")
-    //- link(rel="stylesheet", href="./css/swiper-bundle.min.css")
+    link(rel="stylesheet", href="./css/swiper-bundle.min.css")
     //-link(rel="stylesheet", href="./css/hystmodal.min.css")
     link(rel="stylesheet", href="./css/main.min.css")
 
@@ -26,7 +26,7 @@ html(lang="ru")
     script(src="./js/vuejs-datepicker.min.js")
     script(src="./js/vuejs-datepicker-translation-ru.min.js")
 
-    //- script(src="./js/swiper-bundle.min.js")
+    script(src="./js/swiper-bundle.min.js")
     //- script(src="./js/gsap.min.js")
     //- script(src="./js/hystmodal.min.js")
     //- script(src="./js/dynamicAdapt.js")
@@ -81,4 +81,13 @@ html(lang="ru")
             },
           },
         ],
+      });
+      
+    script.
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
       });
