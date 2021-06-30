@@ -10,9 +10,12 @@ block page-main
           .swiper-wrapper
             .swiper-slide
               .banner__slide
-                img(src="https://via.placeholder.com/1440x500")
+                picture
+                  source(srcset="https://via.placeholder.com/960x500" media="(max-width: 960px)")
+                  source(srcset="https://via.placeholder.com/425x425" media="(max-width: 450px)")
+                  img(src="https://via.placeholder.com/1440x500")
                 .banner__slide-title 
-                  span Сетевой город
+                  span Сетевой город 
                 .banner__slide-descr
                   span Сетевой Город. Образование
                 a(href="#")
@@ -20,7 +23,10 @@ block page-main
                   
             .swiper-slide
               .banner__slide
-                img(src="https://via.placeholder.com/1440x500")
+                picture
+                  source(srcset="https://via.placeholder.com/960x500" media="(max-width: 960px)")
+                  source(srcset="https://via.placeholder.com/425" media="(max-width: 425px)")
+                  img(src="https://via.placeholder.com/1440x500")
                 .banner__slide-title 
                   span Сетевой город
                 .banner__slide-descr
@@ -93,66 +99,77 @@ block page-main
             span Подробнее
       
       .block__info-row-mobile
-        .block__mobile-container
-          .block__info-card
-            .block__card-img
-              include ../components/icons/boy.svg
-            .block__card-title
-              span Абитуриентам
-            .block__card-text
-              .block__card-link 
-                a(href="#") Приемная комиссия
-              .block__card-link 
-                a(href="#") Документы и справки
-              .block__card-link 
-                a(href="#") Поступи онлайн
-            a(href="#").block__card-button
-              span Подробнее
-        .block__mobile-container  
-          .block__info-card
-            .block__card-img
-              include ../components/icons/graduated.svg
-            .block__card-title
-              span Студентам
-            .block__card-text
-              .block__card-link 
-                a(href="#") Расписание
-              .block__card-link 
-                a(href="#") Электронные учебники
-              .block__card-link 
-                a(href="#") Студенческий совет
-            a(href="#").block__card-button
-              span Подробнее
-        .block__mobile-container
-          .block__info-card
-            .block__card-img
-              include ../components/icons/boss.svg
-            .block__card-title
-              span Сотрудникам
-            .block__card-text
-              .block__card-link 
-                a(href="#") Ученый совет
-              .block__card-link 
-                a(href="#") Повышение квалификации
-              .block__card-link 
-                a(href="#") Документы
-            a(href="#").block__card-button
-              span Подробнее
-        .block__mobile-container
-          .block__info-card
-            .block__card-img
-              include ../components/icons/boy.svg
-            .block__card-title
-              span Абитуриентам
-            .block__card-text
-              .block__card-link 
-                a(href="#") Приемная комиссия
-              .block__card-link 
-                a(href="#") Документы и справки
-              .block__card-link 
-                a(href="#") Поступи онлайн
-            a(href="#").block__card-button
-              span Подробнее
+          .swiper-wrapper
+            .swiper-slide
+              .block__mobile-container
+                .block__info-card
+                  .block__card-img
+                    include ../components/icons/boy.svg
+                  .block__card-title
+                    span Абитуриентам
+                  .block__card-text
+                    .block__card-link 
+                      a(href="#") Приемная комиссия
+                    .block__card-link 
+                      a(href="#") Документы и справки
+                    .block__card-link 
+                      a(href="#") Поступи онлайн
+                  a(href="#").block__card-button
+                    span Подробнее
+                    
+            .swiper-slide                  
+              .block__mobile-container  
+                .block__info-card
+                  .block__card-img
+                    include ../components/icons/graduated.svg
+                  .block__card-title
+                    span Студентам
+                  .block__card-text
+                    .block__card-link 
+                      a(href="#") Расписание
+                    .block__card-link 
+                      a(href="#") Электронные учебники
+                    .block__card-link 
+                      a(href="#") Студенческий совет
+                  a(href="#").block__card-button
+                    span Подробнее
+                    
+            .swiper-slide  
+              .block__mobile-container
+                .block__info-card
+                  .block__card-img
+                    include ../components/icons/boss.svg
+                  .block__card-title
+                    span Сотрудникам
+                  .block__card-text
+                    .block__card-link 
+                      a(href="#") Ученый совет
+                    .block__card-link 
+                      a(href="#") Повышение квалификации
+                    .block__card-link 
+                      a(href="#") Документы
+                  a(href="#").block__card-button
+                    span Подробнее
+                    
+            .swiper-slide             
+              .block__mobile-container
+                .block__info-card
+                  .block__card-img
+                    include ../components/icons/boy.svg
+                  .block__card-title
+                    span Абитуриентам
+                  .block__card-text
+                    .block__card-link 
+                      a(href="#") Приемная комиссия
+                    .block__card-link 
+                      a(href="#") Документы и справки
+                    .block__card-link 
+                      a(href="#") Поступи онлайн
+                  a(href="#").block__card-button
+                    span Подробнее
+
+          .swiper-pagination
+          
           
     .block__news
       +title ('Новости')
@@ -161,7 +178,10 @@ block page-main
           .block__news-card            
             .block__news-img
               a(href="#")
-                img(src="https://via.placeholder.com/620x290")
+                picture
+                  source(srcset="https://via.placeholder.com/410x292" media="(max-width: 960px)")
+                  source(srcset="https://via.placeholder.com/140x155" media="(max-width: 480px)")
+                  img(src="https://via.placeholder.com/620x290")
               .block__news__img-date
                 include ../../public/images/icons/calendar-detail_news.svg
                 span 01 июня, 2020
@@ -171,16 +191,88 @@ block page-main
               
             .block__news-text
               span 24 апреля в Сибирском государственном институте искусств имени Дмитрия Хворостовского состоялось Торжественное закрытие XII Международного музыкально-театрального конкурса-фестиваля «Надежда». На церемонии закрытия...
+              .more
+                a(href="#") Подробнее
+                include ../components/icons/dropdown-right.svg
+                
+              
+        .swiper-container-mobile__news
+          .swiper-wrapper
+            .swiper-slide
+              .block__news-card
+                .block__news-img
+                  a(href="#")
+                    picture
+                      source(srcset="https://via.placeholder.com/410x292" media="(min-width: 960px)")
+                      source(srcset="https://via.placeholder.com/140x155" media="(max-width: 480px)")
+                      img(src="https://via.placeholder.com/620x290")
+                  .block__news__img-date
+                    include ../../public/images/icons/calendar-detail_news.svg
+                    span 01 июня, 2020
+                              
+                .block__news-title
+                  a(href="#") Итоги Международного конкурса «Надежда»
+
+            .swiper-slide
+              .block__news-card
+                .block__news-img
+                  a(href="#")
+                    picture
+                      source(srcset="https://via.placeholder.com/410x292" media="(min-width: 960px)")
+                      source(srcset="https://via.placeholder.com/140x155" media="(max-width: 480px)")
+                      img(src="https://via.placeholder.com/620x290")
+                  .block__news__img-date
+                    include ../../public/images/icons/calendar-detail_news.svg
+                    span 01 июня, 2020
+                              
+                .block__news-title
+                  a(href="#") Итоги Международного конкурса «Надежда»
+            
+            .swiper-slide
+              .block__news-card
+                .block__news-img
+                  a(href="#")
+                    picture
+                      source(srcset="https://via.placeholder.com/410x292" media="(min-width: 960px)")
+                      source(srcset="https://via.placeholder.com/140x155" media="(max-width: 480px)")
+                      img(src="https://via.placeholder.com/620x290")
+                  .block__news__img-date
+                    include ../../public/images/icons/calendar-detail_news.svg
+                    span 01 июня, 2020
+                              
+                .block__news-title
+                  a(href="#") Итоги Международного конкурса «Надежда»
+                
+          .swiper-pagination
+            
+          .block__ads-link-mobile 
+            a Все новости
+              include ../components/icons/dropdown-right.svg
             
         .block__news-right
-        
-        
-        
-        
-        
-        
-        
-        
+          .block__news-content
+            .block__news-row
+              .block__news__content-date
+                span 01 июня, 2020
+              .block__news__content-title
+                a(href="#") Итоги Международного конкурса «Надежда»
+              .block__news__content-text
+                span 24 апреля в Сибирском государственном институте искусств имени Дмитрия Хворостовского состоялось Торжественное закрытие...
+            .block__news-row
+              .block__news__content-date
+                span 01 июня, 2020
+              .block__news__content-title
+                a(href="#") Итоги Международного конкурса «Надежда»
+              .block__news__content-text
+                span 24 апреля в Сибирском государственном институте искусств имени Дмитрия Хворостовского состоялось Торжественное закрытие...
+            .block__news-row
+              .block__news__content-date
+                span 01 июня, 2020
+              .block__news__content-title
+                a(href="#") Итоги Международного конкурса «Надежда»
+              .block__news__content-text
+                span 24 апреля в Сибирском государственном институте искусств имени Дмитрия Хворостовского состоялось Торжественное закрытие...
+                
         
     .block__ads
       +title ('Объявления')
@@ -198,7 +290,7 @@ block page-main
           .block__ads-card
             .block__ads__card-img 
               a
-                img(src="/images/card.jpg")
+                img(src="https://via.placeholder.com/410x200")
               .block__ads__card-descr 
                 a.block__ads__card-title Lorem ipsum dolor sit amet
                 .block__ads__card-text Lorem ipsum dolor ssit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -206,7 +298,7 @@ block page-main
           .block__ads-card
             .block__ads__card-img 
               a
-                img(src="/images/card.jpg")
+                img(src="https://via.placeholder.com/410x200")
               .block__ads__card-descr
                 a.block__ads__card-title Lorem ipsum dolor sit amet
                 .block__ads__card-text Lorem idwadpsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -214,37 +306,51 @@ block page-main
           .block__ads-card
             .block__ads__card-img 
               a
-                img(src="/images/card.jpg")
+                img(src="https://via.placeholder.com/410x200")
               .block__ads__card-descr
                 a.block__ads__card-title Lorem ipsum dolor sit amet
                 .block__ads__card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
       
       
       .block__ads-row-mobile
-        .block__ads-card-mobile
-          .block__ads__card-img-mobile
-            a
-              img(src="/images/card.jpg")
-            .block__ads__card-descr-mobile 
-              a.block__ads__card-title-mobile Lorem ipsum dolor sit amet
-              .block__ads__card-text-mobile Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        .swiper-wrapper
+          .swiper-slide
+            .block__ads-card-mobile
+              .block__ads__card-img-mobile
+                a
+                  picture
+                    source(srcset="https://via.placeholder.com/410x292" media="(min-width: 960px)")
+                    source(srcset="https://via.placeholder.com/140x155" media="(max-width: 480px)")
+                    img(src="https://via.placeholder.com/620x290")
+              .block__ads__card-descr-mobile 
+                a.block__ads__card-title-mobile Итоги Международного конкурса «Надежда»
+                .block__ads__card-text-mobile Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
         
-        .block__ads-card-mobile
-          .block__ads__card-img-mobile
-            a
-              img(src="/images/card.jpg")
-            .block__ads__card-descr-mobile 
-              a.block__ads__card-title-mobile Lorem ipsum dolor sit amet
-              .block__ads__card-text-mobile Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      
-        .block__ads-card-mobile
-          .block__ads__card-img-mobile
-            a
-              img(src="/images/card.jpg")
-            .block__ads__card-descr-mobile 
-              a.block__ads__card-title-mobile Lorem ipsum dolor 1sit amet
-              .block__ads__card-text-mobile Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-        
+          .swiper-slide
+            .block__ads-card-mobile
+              .block__ads__card-img-mobile
+                a
+                  picture
+                    source(srcset="https://via.placeholder.com/410x292" media="(min-width: 960px)")
+                    source(srcset="https://via.placeholder.com/140x155" media="(max-width: 480px)")
+                    img(src="https://via.placeholder.com/620x290")
+              .block__ads__card-descr-mobile 
+                a.block__ads__card-title-mobile Итоги Международного конкурса «Надежда»
+                .block__ads__card-text-mobile Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          
+          .swiper-slide
+            .block__ads-card-mobile
+              .block__ads__card-img-mobile
+                a
+                  picture
+                    source(srcset="https://via.placeholder.com/410x292" media="(min-width: 960px)")
+                    source(srcset="https://via.placeholder.com/140x155" media="(max-width: 480px)")
+                    img(src="https://via.placeholder.com/620x290")
+              .block__ads__card-descr-mobile 
+                a.block__ads__card-title-mobile Итоги Международного конкурса «Надежда»
+                .block__ads__card-text-mobile Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          
+        .swiper-pagination
       
       .block__ads-link-mobile 
         a Все объявления
@@ -260,8 +366,9 @@ block page-main
           .block__ads__descr-img
             a
               picture
-                source(media="(max-width: 960px)" srcset="/images/descr.jpg")
-                img(src="/images/descr.jpg")
+                source(srcset="https://via.placeholder.com/640x420" media="(min-width: 960px)")
+                source(srcset="https://via.placeholder.com/140x155" media="(max-width: 480px)")
+                img(src="https://via.placeholder.com/640x420")
       
       .block__ads-descr-mobile
         .block__ads__descr-title Высшая школа музыки Республики Саха (Якутия)

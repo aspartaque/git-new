@@ -42,47 +42,7 @@ html(lang="ru")
 
     script.
       $(document).foundation();
-    
-    script.
-      $('.block__ads-row-mobile').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: false,
-              dots: true,
-            },
-          },
-        ],
-      });
-    
-    script.
-      $('.block__info-row-mobile').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: false,
-              dots: true,
-            },
-          },
-        ],
-      });
-      
+            
     script.
       var swiper = new Swiper(".swiper-container", {
         pagination: {
@@ -90,4 +50,37 @@ html(lang="ru")
           clickable: true,
         },
         loop: true,
+      });
+      
+    script.
+      var swiper = new Swiper(".swiper-container-mobile__news", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: false,
+      });
+          
+    script.
+      var swiper = new Swiper(".block__ads-row-mobile", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: false,
+      });
+      
+    script.
+      var swiper = new Swiper(".block__info-row-mobile", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: false,
       });
