@@ -1,0 +1,29 @@
+.l-timeline
+  ul
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+    li+li
+      margin-left: 6px
+    li
+      &.current
+        background: #F1F1F1
+        border-radius: 10px
+      a
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: center
+        padding: 13px
+        height: 40px
+        font-weight: normal
+        font-size: 14px
+        line-height: 13px
+        color: #02447E
+        border-radius: 10px
+        transition: background-color .2s ease-out
+        &:hover
+          background: #F1F1F1

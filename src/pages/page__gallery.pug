@@ -1,0 +1,10 @@
+extends ../layouts/static.pug
+
+block page-vars
+  - var title = 'Галерея';
+  - var sidebar = false;
+  - var datepicker = false;
+  - var timeline = true;
+
+block page-content
+  include ../components/gallery

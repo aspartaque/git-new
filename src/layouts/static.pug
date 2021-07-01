@@ -17,6 +17,7 @@ html(lang="ru")
     link(rel="stylesheet", href="./css/foundation.min.css")
     link(rel="stylesheet", href="./css/slick.css")
     link(rel="stylesheet", href="./css/slick-theme.css")
+    link(rel="stylesheet", href="./css/fancybox.css")
     //- link(rel="stylesheet", href="./css/swiper-bundle.min.css")
     //-link(rel="stylesheet", href="./css/hystmodal.min.css")
     link(rel="stylesheet", href="./css/main.min.css")
@@ -51,6 +52,8 @@ html(lang="ru")
                   h1.l-page-title #{title}
                   if datepicker
                     include ../components/datepicker
+                  if timeline
+                    include ../components/timeline
                 .l-page-content__inner
                   block page-content
 
@@ -59,4 +62,5 @@ html(lang="ru")
     script.
       $(document).foundation();
     
+    script(src="./js/fancybox.umd.js")
     script(src="./js/main.js")
