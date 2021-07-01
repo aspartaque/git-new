@@ -1,6 +1,4 @@
 
-/* BLOCK BANNER */
-
 .block__banner
   .banner-slider
     height: 500px
@@ -33,21 +31,26 @@
                 line-height: 17px
                 color: #FFFFFF
 
-            .banner__slide-button
-              display: flex
-              justify-content: center
-              align-items: center
-              position: absolute
-              width: 200px
-              height: 50px
-              left: 70px
-              bottom: 170px
-              background: #076FCD
-              border-radius: 10px
-              font-weight: normal
-              font-size: 14px
-              line-height: 13px
-              color: #FFFFFF
+            a
+              .banner__slide-button
+                display: flex
+                justify-content: center
+                align-items: center
+                position: absolute
+                width: 200px
+                height: 50px
+                left: 70px
+                bottom: 170px
+                background: #076FCD
+                border-radius: 10px
+                font-weight: normal
+                font-size: 14px
+                line-height: 13px
+                color: #FFFFFF
+                transition: .3s
+              &:hover .banner__slide-button
+                background: #076FEE
+
 
 .swiper-pagination
   display: flex
@@ -70,7 +73,7 @@
     .is-dropdown-submenu
       z-index: 10
 
-/* BLOCK INFO */
+
 
 .block__info
   padding-top: 80px
@@ -168,7 +171,7 @@
     .swiper-pagination-bullet-active
       background: #828282
 
-/* BLOCK NEWS */
+
 
 .block__news
   background: #FFFFFF
@@ -302,12 +305,8 @@
 
 
 
-/* BLOCK ADS */
-
 .block__ads
   padding-top: 80px
-
-/* BLOCK ADS TOP */
 
 .block__ads-top
   display: flex
@@ -327,8 +326,6 @@
     color: #076FCD
     svg
       margin-left: 5px
-
-/* BLOCK ADS MAIN (BIG CARD) */
 
 .block__ads-main
   position: relative
@@ -393,8 +390,6 @@
     border-top-right-radius: 20px
     max-width: 420px
 
-/* BLOCK ADS CARD (3)*/
-
 .block__ads-row
   margin-top: 20px
   display: flex
@@ -425,8 +420,6 @@
   font-size: 14px
   line-height: 18px
   color: #002543
-
-/* BLOCK ADS DESCRIPTION */
 
 .block__ads-descr
   margin-top: 80px
@@ -482,12 +475,8 @@
 .block__ads-descr-mobile
   display: none
 
-/*SWIPER DESCKTOP*/
-
 .block__ads-row-mobile
   display: none
-
-/* ADAPTIVE */
 
 @include tablet
   header
@@ -496,6 +485,9 @@
   .l-container
     width: 990px
     padding: 0px 40px 0px 40px
+
+
+
     .block__info
       padding: 80px 0px 80px 0px
       .block__info-row
@@ -517,6 +509,8 @@
           a.block__card-button
             width: 166px
             span
+
+
 
     .block__news
       padding: 80px 0px 80px 0px
@@ -570,6 +564,8 @@
                   font-size: 14px
                   line-height: 24px
 
+
+
   .block__ads
   .block__ads-main
   .block__ads__main-descr
@@ -615,18 +611,352 @@
   .block__ads__descr-img
     width: 430px
 
+
+@include mobile_tablet
+  .l-container
+    width: 768px
+    padding: 0px 30px 0px 30px
+
+
+
+    .block__info
+      padding: 80px 0px 80px 0px
+      .block__info-row
+        .block__info-card
+          width: 165px
+          height: 355px
+          padding: 30px 0px 20px 0px
+          position: relative
+          .block__card-img
+          .block__card-title
+            margin-top: 10px
+            span
+              font-size: 18px
+          .block__card-text
+            margin-top: 10px
+          a.block__card-button
+            width: 130px
+            margin: 0
+            position: absolute
+            bottom: 20px
+
+
+
+    .block__news
+      padding: 80px 0px 80px 0px
+      .block__news-main
+        .block__news-right
+          width: 255px
+
+
+
+  .block__ads
+  .block__ads-main
+  .block__ads__main-descr
+    position: relative
+    padding: 30px 20px 30px 20px
+  .block__ads__main-title
+    font-size: 20px
+    line-height: 24px
+  .block__ads__main-text
+    margin-top: 10px
+    line-height: 18px
+  a.block__ads__main-button
+    margin-top: 0
+    position: absolute
+    bottom: 20px
+
+  .block__ads-row
+    display: grid
+    grid-template-columns: 350px 430px
+    grid-template-rows: 354px
+    justify-content: flex-start
+    grid-gap: 10px
+  .block__ads-card
+    width: 350px
+
+  .block__ads-descr
+    justify-content: space-between
+    margin-top: 60px
+  .block__ads-descr-left
+    padding-right: 0
+    margin-right: 10px
+
+  .block__ads__descr-text
+    margin-top: 10px
+
+  a.block__ads__descr-button
+
+  .block__ads-descr-right
+  .block__ads__descr-img
+    width: 400px
+
 @include mobile
   .l-container
-    max-width: 450px
-    width: 100%
-    padding: 0 15px
+    width: 425px
+    padding: 0px 15px 0px 15px
+
+
+
     .block__banner
       .banner-slider
+        height: 320px
         .swiper-container
           .swiper-wrapper
             .swiper-slide
               .banner__slide
+                img
+                  width: 100%
+                  height: 320px
                 .banner__slide-title
                   span
+                    font-size: 25px
+                    line-height: 24px
+                    top: 50px
+                    left: 25%
                 .banner__slide-descr
                   span
+                    font-size: 14px
+                    line-height: 13px
+                    top: 85px
+                    left: 23%
+                a
+                  .banner__slide-button
+                    bottom: 70px
+                    left: 25%
+
+
+
+    .block__info
+      padding: 80px 0px 80px 0px
+      .block__info-row
+        display: grid
+        grid-gap: 10px
+        grid-template-columns: 180px 180px
+        justify-content: center
+        .block__info-card
+          max-width: 180px
+          width: 100%
+          height: 180px
+          padding: 25px 0px 10px 0px
+          position: relative
+          .block__card-img
+            height: 70px
+            svg
+              width: 70px
+              height: 70px
+          .block__card-title
+            margin-top: 0px
+            span
+              font-weight: bold
+              font-size: 14px
+              line-height: 13px
+          .block__card-text
+            display: none
+          a.block__card-button
+            width: 120px
+            height: 40px
+            margin: 0
+            position: absolute
+            bottom: 10px
+
+
+
+    .block__news
+      padding: 80px 0px 80px 0px
+      overflow: hidden
+      .block__ads-top
+        justify-content: center
+        .block__ads-link
+          display: none
+      .block__news-main
+        .block__news-left
+          display: none
+        .swiper-container-mobile__news
+          position: relative
+          width: 100%
+          display: block
+          .swiper-wrapper
+            height: 217px
+            .swiper-slide
+              height: 217px
+              .block__news-card
+                max-width: 180px
+                width: 100%
+                height: 250px
+                border: 1px solid #F1F1F1
+                box-sizing: border-box
+                border-radius: 10px
+                margin: 0 auto
+                position: relative
+                .block__news-img
+                  a
+                    img
+                      border-radius: 10px
+                      max-width: 180px
+                      width: 100%
+                  .block__news__img-date
+                    position: absolute
+                    left: 0
+                    top: 0
+                    width: 112px
+                    height: 29px
+                    background: #076FCD
+                    border-radius: 10px 0px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    span
+                      font-weight: normal
+                      font-size: 10px
+                      line-height: 10px
+                      color: #FFFFFF
+                    svg
+                      fill: white
+                      margin-right: 5px
+                      width: 13px
+                      height: 13px
+                .block__news-title
+                  padding: 10px
+                  display: flex
+                  a
+                    font-weight: bold
+                    font-size: 10px
+                    line-height: 140%
+                    color: #076FCD
+
+          .swiper-pagination
+            position: absolute
+            bottom: -80px
+            margin-bottom: 0
+
+            .swiper-pagination-bullet
+              background: #828282
+              opacity: 0.7
+            .swiper-pagination-bullet-active
+              background: #828282
+
+    .block__news-right
+      display: none
+
+
+
+    .block__ads
+      .block__ads-top
+        justify-content: center
+        .block__ads-link
+          display: none
+
+    .block__ads-main
+      display: none
+
+    .block__ads-top
+      justify-content: center
+
+    .block__ads-link
+      display: none
+
+    .block__ads-row
+      display: flex
+      flex-direction: column
+
+    .block__ads-descr
+      display: none
+
+    .block__ads-row
+      display: none
+
+    .block__ads-row-mobile
+      margin-top: 40px
+      display: block
+      overflow: hidden
+      position: relative
+      padding-bottom: 40px
+
+      .swiper-wrapper
+        .swiper-slide
+          width: 180px
+          .block__ads-card-mobile
+            border: 1px solid #F1F1F1
+            box-sizing: border-box
+            border-radius: 10px
+            width: 180px
+            margin: 0 auto
+            height: 250px
+            .block__ads__card-img-mobile
+              a
+                img
+                  width: 180px
+                  height: 100%
+                  border-radius: 10px
+
+            .block__ads__card-descr-mobile
+              display: flex
+              align-items: center
+              flex-direction: column
+              a.block__ads__card-title-mobile
+                font-weight: bold
+                font-size: 10px
+                line-height: 140%
+                color: #076FCD
+                padding: 10px
+
+              .block__ads__card-text-mobile
+                display: none
+
+      .swiper-pagination
+        margin: 0
+        bottom: 0
+
+        .swiper-pagination-bullet
+          background: #828282
+          opacity: 0.7
+
+        .swiper-pagination-bullet-active
+          background: #828282
+
+
+    .block__ads-link-mobile
+      display: flex
+      justify-content: center
+      margin-top: 20px
+      a
+        font-weight: normal
+        font-size: 16px
+        line-height: 30px
+        color: #076FCD
+        svg
+          margin-left: 5px
+
+    .block__ads-descr-mobile
+      margin-top: 60px
+      margin-bottom: 61px
+      display: block
+
+    .block__ads-descr-left
+      padding: 0
+      text-align: left
+
+    .block__ads__descr-title
+      font-family: Gotham Pro
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 30px
+      color: #076FCD
+
+    .block__ads__descr-text
+      font-size: 14px
+      line-height: 24px
+      color: #002543
+
+    a.block__ads__descr-button
+      margin-top: 20px
+      width: 100%
+      max-width: 100%
+
+    .block__ads-descr-right
+
+    .block__ads__descr-img
+      margin-top: 20px
+      height: auto

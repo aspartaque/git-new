@@ -1,14 +1,21 @@
-$mobile-width: 320px
+$mobile-width: 425px
+$mobile_tablet-width: 768px
 $tablet-width: 910px
 $desktop-width: 1330px
 
+
 @mixin mobile
-  @media (max-width: #{$tablet-width - 1px})
+  @media (max-width: #{$mobile-width - 1px})
+    @content
+
+@mixin mobile_tablet
+  @media (max-width: #{$mobile_tablet-width - 1px})
     @content
 
 @mixin tablet
-  @media (max-width: #{$desktop-width - 1px})
+  @media (max-width: #{$tablet-width - 1px})
     @content
+
 
 *
   box-sizing: border-box

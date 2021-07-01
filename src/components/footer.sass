@@ -249,7 +249,7 @@ a.icon-twitter
         line-height: 14px
 
 /*ADAPTIVE-MOBILE*/
-@media screen and (max-width: 414px)
+@media screen and (max-width: 425px)
 
   .l-footer
     display: none
@@ -263,20 +263,21 @@ a.icon-twitter
       flex-direction: column
 
   .l-footer__block__links
-    margin-top: 40px
-    display: flex
+    margin-top: 60px
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-template-rows: 1fr 1fr 1fr
     justify-content: center
     text-align: center
-    ul
-      li
-        list-style: none
-        margin-bottom: 40px
-        &:last-child
-          margin-bottom: 0
-        a
-          justify-content: center
-          svg
-            margin-left: 7px
+    li
+      list-style: none
+      margin-bottom: 40px
+      &:last-child
+        margin-bottom: 0
+      a
+        justify-content: flex-start
+        svg
+          margin-left: 7px
 
   .l-footer__contacts__icon
     display: flex
