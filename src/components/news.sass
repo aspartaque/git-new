@@ -66,3 +66,91 @@
   font-size: 14px
   line-height: 24px
   color: #002543
+
+@include mobile
+  .l-page-wrapper
+    width: 100%
+
+    .l-breadcrumbs
+      nav
+        .breadcrumbs
+          display: none
+
+        .breadcrumbs-mobile
+          display: block
+          list-style: none
+          margin: 0
+          li
+            display: flex
+            align-items: center
+            svg
+              display: block
+              fill: #000000
+              margin-right: 5px
+            a
+              font-size: 12px
+              line-height: 11px
+              color: #BDBDBD
+
+
+    .l-page-content
+      border-radius: 0
+      box-shadow: none
+      border-top: 2px solid #076FCD
+      padding: 30px 0px
+      &::before
+        display: none
+
+      .l-page-header
+        flex-direction: column
+
+        .l-page-title
+          font-size: 20px
+          line-height: 28px
+          margin-bottom: 20px
+
+        .l-datepicker
+          .period-selector
+            .period-selector__submit
+              .l-datepicker-button
+                width: 40px
+                height: 40px
+                padding: 0
+                svg
+                  display: flex
+                  position: absolute
+                  left: 28%
+                  top: 25%
+                span
+                  display: none
+
+      .l-page-content__inner
+        .l-news-list
+          grid-template-columns: 180px 180px
+
+          .l-article
+            width: 180px
+
+            .l-article-date
+              font-size: 10px
+              line-height: 10px
+              padding: 8px 10px
+              svg
+                width: 13px
+                height: 13px
+
+            .l-article-picture
+              a
+                img
+                  height: 155px
+
+            .l-article-content
+              margin: 10px
+              
+              .l-article-title
+                font-size: 10px
+                line-height: 140%
+
+              .l-article-anounce
+                display: none
+        .l-pagination
