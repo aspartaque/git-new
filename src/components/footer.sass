@@ -1,5 +1,3 @@
-.l-footer
-  padding-top: 60px
 
 .l-footer-top
   display: flex
@@ -218,7 +216,7 @@ a.icon-twitter
     fill: #1DA1F2
 
 .l-footer-mobile
-  display: none
+  display: block
 
   /*ADAPTIVE-TABLET*/
 
@@ -248,36 +246,183 @@ a.icon-twitter
         font-size: 12px
         line-height: 14px
 
+
+
+.l-footer-mobile
+  padding: 0 70px
+  margin-top: 55px
+  .l-footer-top
+    display: flex
+    grid-template-columns: 50% 50%
+    justify-content: space-between
+    padding-bottom: 0
+    border-bottom: none
+    .l-footer__top-left
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .l-footer__block__links
+        display: grid
+        grid-template-columns: 170px 170px 170px
+        li
+          list-style: none
+          margin-bottom: 34px
+          a
+            svg
+              margin-left: 5px
+
+    .l-footer__top-right
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      .l-footer__contacts
+        display: flex
+        align-items: center
+        svg
+          margin-right: 10px
+        span
+          font-weight: bold
+
+      .l-footer__info
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-top: 13px
+        span:nth-of-type(2)
+          margin-bottom: 25px
+
+
+  .l-footer-top__bottom
+    display: flex
+    align-items: center
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid #076FCD
+    padding-bottom: 30px
+    .l-footer-left__bottom-info
+      justify-content: space-between
+      flex-direction: row
+      height: 50px
+      margin-left: 0
+      .l-footer-left__bottom__info-links
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        margin-left: 20px
+        svg
+          fill: #FFFFFF
+
+
+
+    .l-footer__links
+      display: flex
+      justify-content: flex-end
+      margin-top: 40px
+      a
+        margin-right: 20px
+        &:last-child
+          margin-right: 0
+
+@media screen and (max-width: 900px)
+  .l-footer-mobile
+    padding: 0
+
+  .l-footer-mobile
+    .l-footer-top
+      .l-footer__top-right
+        .l-footer__info
+          span:nth-of-type(2)
+            margin-bottom: 0
+
+@media screen and (max-width: 770px)
+  .l-footer-mobile
+    .l-footer-top
+      .l-footer__top-left
+        .l-footer__block__links
+          grid-template-columns: 170px 170px
+
 /*ADAPTIVE-MOBILE*/
+
 @media screen and (max-width: 425px)
 
   .l-footer
     display: none
+
 
   .block__ads-descr-mobile
     display: block
 
   .l-footer-mobile
     display: block
+    padding: 0
     .l-footer-top
       flex-direction: column
+      display: flex
+      .l-footer__top-left
+        .l-footer__block__links
+          margin-top: 0
+          display: grid
+          flex-direction: column
+          grid-template-columns: 50% 50%
+          grid-template-rows: 1fr 1fr 1fr
+          justify-content: center
+          li
+            list-style: none
+            margin-bottom: 40px
+            a
+              justify-content: flex-start
+              svg
+                margin-left: 7px
 
-  .l-footer__block__links
-    margin-top: 60px
-    display: grid
-    grid-template-columns: 50% 50%
-    grid-template-rows: 1fr 1fr 1fr
-    justify-content: center
-    text-align: center
+      .l-footer__top-right
+        justify-content: center
+        align-items: center
+        .l-footer__info
+          align-items: center
+          span:nth-of-type(2)
+            margin-bottom: 0
+
+    .l-footer-top__bottom
+      display: flex
+      flex-direction: column-reverse
+      justify-content: flex-end
+      border-bottom: 1px solid #076FCD
+      .l-footer-left__bottom-info
+        height: 100%
+        margin-top: 0
+        flex-direction: column-reverse
+        justify-content: flex-end
+        .l-footer-left__bottom__info-links
+          margin-top: 30px
+          align-items: center
+          margin-left: 0
+          a
+            flex-direction: column
+            svg
+              margin-bottom: 10px
+
+      .l-footer__links
+        justify-content: center
+
+    .l-footer-bottom
+      padding-bottom: 40px
+
+
+  .l-footer__left-block__links
+    display: flex
+    flex-direction: row
+
+  .l-footer__left-block__links-row
+    flex-direction: column
+    justify-content: space-between
+    margin-bottom: 0
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
     li
-      list-style: none
       margin-bottom: 40px
-      &:last-child
-        margin-bottom: 0
-      a
-        justify-content: flex-start
-        svg
-          margin-left: 7px
 
   .l-footer__contacts__icon
     display: flex

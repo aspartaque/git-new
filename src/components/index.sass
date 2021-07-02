@@ -1,55 +1,64 @@
+.l-container-banner
+  width: 100%
+  padding: 0
+  margin: 0 auto
+  position: absolute
+  @media screen and (max-width: 1330px)
+    margin: 0 auto
+    width: 1290px
+  section.banner
+    margin-bottom: 80px
+    .block__banner
+      .banner-slider
+        height: 500px
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              .banner__slide
+                position: relative
+                img
+                  height: 500px
+                  width: 100%
 
-.block__banner
-  .banner-slider
-    height: 500px
-    .swiper-container
-      .swiper-wrapper
-        .swiper-slide
-          .banner__slide
-            position: relative
-            img
-              height: 500px
-              width: 1400px
+                .banner__slide-title
+                  span
+                    position: absolute
+                    left: 15%
+                    top: 180px
+                    font-weight: bold
+                    font-size: 60px
+                    line-height: 57px
+                    color: #FFFFFF
 
-            .banner__slide-title
-              span
-                position: absolute
-                left: 70px
-                top: 180px
-                font-weight: bold
-                font-size: 60px
-                line-height: 57px
-                color: #FFFFFF
+                .banner__slide-descr
+                  span
+                    position: absolute
+                    left: 15%
+                    top: 242px
+                    font-weight: normal
+                    font-size: 18px
+                    line-height: 17px
+                    color: #FFFFFF
 
-            .banner__slide-descr
-              span
-                position: absolute
-                left: 70px
-                top: 242px
-                font-weight: normal
-                font-size: 18px
-                line-height: 17px
-                color: #FFFFFF
-
-            a
-              .banner__slide-button
-                display: flex
-                justify-content: center
-                align-items: center
-                position: absolute
-                width: 200px
-                height: 50px
-                left: 70px
-                bottom: 170px
-                background: #076FCD
-                border-radius: 10px
-                font-weight: normal
-                font-size: 14px
-                line-height: 13px
-                color: #FFFFFF
-                transition: .3s
-              &:hover .banner__slide-button
-                background: #076FEE
+                a
+                  .banner__slide-button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    position: absolute
+                    width: 200px
+                    height: 50px
+                    left: 15%
+                    bottom: 170px
+                    background: #076FCD
+                    border-radius: 10px
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 13px
+                    color: #FFFFFF
+                    transition: .3s
+                  &:hover .banner__slide-button
+                    background: #076FEE
 
 
 .swiper-pagination
@@ -74,102 +83,102 @@
       z-index: 10
 
 
+section.info_cards
+  margin-top: 580px
+  .block__info
+    padding-bottom: 80px
 
-.block__info
-  padding-top: 80px
-  padding-bottom: 80px
+  .block__info-row
+    display: flex
+    justify-content: space-between
 
-.block__info-row
-  display: flex
-  justify-content: space-between
-
-.block__info-card
-  background: #FFFFFF
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
-  border-radius: 20px
-  position: relative
-  padding: 40px 30px 30px 30px
-  display: flex
-  flex-direction: column
-  align-items: center
-  max-width: 310px
-  width: 100%
-  height: 390px
-  &::after
-    content: ""
-    position: absolute
-    width: 100%
-    height: 17px
-    left: 0
-    top: 0
-    background: #076FCD
+  .block__info-card
+    background: #FFFFFF
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
-    border-top-left-radius: 20px
-    border-top-right-radius: 20px
+    border-radius: 20px
+    position: relative
+    padding: 40px 30px 30px 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 310px
+    width: 100%
+    height: 390px
+    &::after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 17px
+      left: 0
+      top: 0
+      background: #076FCD
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+      border-top-left-radius: 20px
+      border-top-right-radius: 20px
 
-.block__card-img
-  svg
-    g
-      clip-path: url(../components/icons/)
+  .block__card-img
+    svg
+      g
+        clip-path: url(../components/icons/)
 
-.block__card-title
-  margin-top: 20px
-  span
-    font-weight: normal
-    font-size: 30px
-    line-height: 29px
-    color: #002543
-
-.block__card-text
-  margin-top: 20px
-  display: flex
-  flex-direction: column
-  align-items: center
-  .block__card-link
-    text-align: center
-    a
+  .block__card-title
+    margin-top: 20px
+    span
       font-weight: normal
-      font-size: 17px
-      line-height: 30px
+      font-size: 30px
+      line-height: 29px
+      color: #002543
+
+  .block__card-text
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .block__card-link
       text-align: center
-      color: #076FCD
-      text-align: center
+      a
+        font-weight: normal
+        font-size: 17px
+        line-height: 30px
+        text-align: center
+        color: #076FCD
+        text-align: center
 
-.block__card-button
-  margin-top: 20px
-  max-width: 200px
-  width: 100%
-  height: 50px
-  background: #076FCD
-  border-radius: 10px
-  display: flex
-  justify-content: center
-  align-items: center
+  .block__card-button
+    margin-top: 20px
+    max-width: 200px
+    width: 100%
+    height: 50px
+    background: #076FCD
+    border-radius: 10px
+    display: flex
+    justify-content: center
+    align-items: center
 
-  span
-    font-weight: normal
-    font-size: 14px
-    line-height: 24px
-    color: #FFFFFF
+    span
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+      color: #FFFFFF
 
-.block__info-row-mobile
-  display: none
+  .block__info-row-mobile
+    display: none
 
 
-.block__info-row-mobile
-  position: relative
-  .swiper-wrapper
-  .swiper-pagination
-    margin: 0
-    bottom: -30px
-    left: 0
+  .block__info-row-mobile
+    position: relative
+    .swiper-wrapper
+    .swiper-pagination
+      margin: 0
+      bottom: -30px
+      left: 0
 
-    .swiper-pagination-bullet
-      background: #828282
-      opacity: 0.7
+      .swiper-pagination-bullet
+        background: #828282
+        opacity: 0.7
 
-    .swiper-pagination-bullet-active
-      background: #828282
+      .swiper-pagination-bullet-active
+        background: #828282
 
 
 
@@ -486,90 +495,94 @@
   header
     display: none
 
+  .l-container-banner
+    width: 960px
+    padding: 0
+
   .l-container
-    width: 990px
-    padding: 0px 40px 0px 40px
-
-
-
-    .block__info
-      padding: 80px 0px 80px 0px
-      .block__info-row
-        .block__info-card
-          width: 205px
-          padding: 40px 0px 20px 0px
-          .block__card-img
-          .block__card-title
-            span
-              font-weight: normal
-              font-size: 20px
-              line-height: 19px
-          .block__card-text
-            .block__card-link
-              a
-                font-weight: normal
-                font-size: 14px
-                line-height: 24px
-          a.block__card-button
-            width: 166px
-            span
-
-
-
-    .block__news
-      padding: 80px 0px 80px 0px
-      .block__news-main
-        .block__news-left
-          .block__news-card
-            width: 430px
-            height: 540px
-            .block__news-title
-              a
-                font-weight: bold
-                font-size: 16px
-                line-height: 25px
-            .block__news-text
+    max-width: none
+    width: 960px
+    padding: 0 15px
+    margin: 0 auto
+    section.info_cards
+      .block__info
+        padding: 80px 0px 80px 0px
+        .block__info-row
+          .block__info-card
+            width: 205px
+            padding: 40px 0px 20px 0px
+            .block__card-img
+            .block__card-title
               span
-                font-size: 14px
-                line-height: 24px
-              .more
-                display: flex
-                justify-content: flex-end
-                align-items: center
+                font-weight: normal
+                font-size: 20px
+                line-height: 19px
+            .block__card-text
+              .block__card-link
                 a
-                  font-size: 16px
-                  line-height: 30px
-                  color: #076FCD
-                svg
-                  margin-left: 10px
-
-        .block__news-right
-          .block__news-content
-            .block__news-row
-              padding-bottom: 30px
-              margin-top: 30px
-              &:first-child
-                margin-top: 0
-              &:last-child
-                padding-bottom: 0
-
-              .block__news__content-date
-                span
+                  font-weight: normal
                   font-size: 14px
-                  line-height: 13px
+                  line-height: 24px
+            a.block__card-button
+              width: 166px
+              span
 
-              .block__news__content-title
+
+    section.news
+      .block__news
+        padding: 80px 0px 80px 0px
+        .block__news-main
+          .block__news-left
+            .block__news-card
+              width: 430px
+              height: 540px
+              .block__news-title
                 a
+                  font-weight: bold
                   font-size: 16px
                   line-height: 25px
-
-              .block__news__content-text
+              .block__news-text
                 span
                   font-size: 14px
                   line-height: 24px
+                .more
+                  display: flex
+                  justify-content: flex-end
+                  align-items: center
+                  a
+                    font-size: 16px
+                    line-height: 30px
+                    color: #076FCD
+                  svg
+                    margin-left: 10px
+
+          .block__news-right
+            .block__news-content
+              .block__news-row
+                padding-bottom: 30px
+                margin-top: 30px
+                &:first-child
+                  margin-top: 0
+                &:last-child
+                  padding-bottom: 0
+
+                .block__news__content-date
+                  span
+                    font-size: 14px
+                    line-height: 13px
+
+                .block__news__content-title
+                  a
+                    font-size: 16px
+                    line-height: 25px
+
+                .block__news__content-text
+                  span
+                    font-size: 14px
+                    line-height: 24px
 
 
-
+  section.news
   .block__ads
   .block__ads-main
   .block__ads__main-descr
@@ -617,43 +630,57 @@
 
 
 @include mobile_tablet
+  .l-container-banner
+    width: 768px
+    padding: 0
+    section.banner
+      .block__banner
+        .banner-slider
+          height: 500px
+          .swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                .banner__slide
+                  position: relative
+                  img
+                    height: 500px
+                    width: 100%
+
   .l-container
     width: 768px
     padding: 0px 30px 0px 30px
+    section.info_cards
+      .block__info
+        padding: 80px 0px 80px 0px
+        .block__info-row
+          .block__info-card
+            width: 165px
+            height: 355px
+            padding: 30px 0px 20px 0px
+            position: relative
+            .block__card-img
+            .block__card-title
+              margin-top: 10px
+              span
+                font-size: 18px
+            .block__card-text
+              margin-top: 10px
+            a.block__card-button
+              width: 130px
+              margin: 0
+              position: absolute
+              bottom: 20px
 
 
-
-    .block__info
-      padding: 80px 0px 80px 0px
-      .block__info-row
-        .block__info-card
-          width: 165px
-          height: 355px
-          padding: 30px 0px 20px 0px
-          position: relative
-          .block__card-img
-          .block__card-title
-            margin-top: 10px
-            span
-              font-size: 18px
-          .block__card-text
-            margin-top: 10px
-          a.block__card-button
-            width: 130px
-            margin: 0
-            position: absolute
-            bottom: 20px
+    section.news
+      .block__news
+        padding: 80px 0px 80px 0px
+        .block__news-main
+          .block__news-right
+            width: 255px
 
 
-
-    .block__news
-      padding: 80px 0px 80px 0px
-      .block__news-main
-        .block__news-right
-          width: 255px
-
-
-
+  section.ads
   .block__ads
   .block__ads-main
   .block__ads__main-descr
@@ -696,152 +723,159 @@
     width: 400px
 
 @include mobile
+
+  .l-container-banner
+    padding: 0
+    max-width: 426px
+    position: static
+    section.banner
+      .block__banner
+        .banner-slider
+          height: 320px
+          .swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                .banner__slide
+                  img
+                    width: 100%
+                    height: 320px
+                  .banner__slide-title
+                    span
+                      font-size: 25px
+                      line-height: 24px
+                      top: 50px
+                      left: 25%
+                  .banner__slide-descr
+                    span
+                      font-size: 14px
+                      line-height: 13px
+                      top: 85px
+                      left: 23%
+                  a
+                    .banner__slide-button
+                      bottom: 70px
+                      left: 25%
+
+
   .l-container
     width: 425px
     padding: 0px 15px 0px 15px
-
-
-
-    .block__banner
-      .banner-slider
-        height: 320px
-        .swiper-container
-          .swiper-wrapper
-            .swiper-slide
-              .banner__slide
-                img
-                  width: 100%
-                  height: 320px
-                .banner__slide-title
-                  span
-                    font-size: 25px
-                    line-height: 24px
-                    top: 50px
-                    left: 25%
-                .banner__slide-descr
-                  span
-                    font-size: 14px
-                    line-height: 13px
-                    top: 85px
-                    left: 23%
-                a
-                  .banner__slide-button
-                    bottom: 70px
-                    left: 25%
-
-
-
-    .block__info
-      padding: 80px 0px 80px 0px
-      .block__info-row
-        display: grid
-        grid-gap: 10px
-        grid-template-columns: 180px 180px
-        justify-content: center
-        .block__info-card
-          max-width: 180px
-          width: 100%
-          height: 180px
-          padding: 25px 0px 10px 0px
-          position: relative
-          .block__card-img
-            height: 70px
-            svg
-              width: 70px
+    section.info_cards
+      margin-top: 0
+      .block__info
+        padding: 0px 0px 80px 0px
+        .block__info-row
+          display: grid
+          grid-gap: 10px
+          grid-template-columns: 180px 180px
+          justify-content: center
+          .block__info-card
+            max-width: 180px
+            width: 100%
+            height: 180px
+            padding: 25px 0px 10px 0px
+            position: relative
+            .block__card-img
               height: 70px
-          .block__card-title
-            margin-top: 0px
-            span
-              font-weight: bold
-              font-size: 14px
-              line-height: 13px
-          .block__card-text
+              svg
+                width: 70px
+                height: 70px
+            .block__card-title
+              margin-top: 0px
+              span
+                font-weight: bold
+                font-size: 14px
+                line-height: 13px
+            .block__card-text
+              display: none
+            a.block__card-button
+              width: 120px
+              height: 40px
+              margin: 0
+              position: absolute
+              bottom: 10px
+
+
+  .l-container
+    width: 425px
+    padding: 0px 15px 0px 15px
+    section.news
+      .block__news
+        padding: 80px 0px 80px 0px
+        overflow: hidden
+        .block__ads-top
+          justify-content: center
+          .block__ads-link
             display: none
-          a.block__card-button
-            width: 120px
-            height: 40px
-            margin: 0
-            position: absolute
-            bottom: 10px
-
-
-
-    .block__news
-      padding: 80px 0px 80px 0px
-      overflow: hidden
-      .block__ads-top
-        justify-content: center
-        .block__ads-link
-          display: none
-      .block__news-main
-        .block__news-left
-          display: none
-        .swiper-container-mobile__news
-          position: relative
-          width: 100%
-          display: block
-          .swiper-wrapper
-            height: 217px
-            .swiper-slide
+        .block__news-main
+          .block__news-left
+            display: none
+          .swiper-container-mobile__news
+            position: relative
+            width: 100%
+            display: block
+            .swiper-wrapper
               height: 217px
-              .block__news-card
-                max-width: 180px
-                width: 100%
-                height: 250px
-                border: 1px solid #F1F1F1
-                box-sizing: border-box
-                border-radius: 10px
-                margin: 0 auto
-                position: relative
-                .block__news-img
-                  a
-                    img
-                      border-radius: 10px
-                      max-width: 180px
-                      width: 100%
-                  .block__news__img-date
-                    position: absolute
-                    left: 0
-                    top: 0
-                    width: 112px
-                    height: 29px
-                    background: #076FCD
-                    border-radius: 10px 0px
+              .swiper-slide
+                height: 217px
+                .block__news-card
+                  max-width: 180px
+                  width: 100%
+                  height: 250px
+                  border: 1px solid #F1F1F1
+                  box-sizing: border-box
+                  border-radius: 10px
+                  margin: 0 auto
+                  position: relative
+                  .block__news-img
+                    a
+                      img
+                        border-radius: 10px
+                        max-width: 180px
+                        width: 100%
+                    .block__news__img-date
+                      position: absolute
+                      left: 0
+                      top: 0
+                      width: 112px
+                      height: 29px
+                      background: #076FCD
+                      border-radius: 10px 0px
+                      display: flex
+                      align-items: center
+                      justify-content: center
+                      span
+                        font-weight: normal
+                        font-size: 10px
+                        line-height: 10px
+                        color: #FFFFFF
+                      svg
+                        fill: white
+                        margin-right: 5px
+                        width: 13px
+                        height: 13px
+                  .block__news-title
+                    padding: 10px
                     display: flex
-                    align-items: center
-                    justify-content: center
-                    span
-                      font-weight: normal
+                    a
+                      font-weight: bold
                       font-size: 10px
-                      line-height: 10px
-                      color: #FFFFFF
-                    svg
-                      fill: white
-                      margin-right: 5px
-                      width: 13px
-                      height: 13px
-                .block__news-title
-                  padding: 10px
-                  display: flex
-                  a
-                    font-weight: bold
-                    font-size: 10px
-                    line-height: 140%
-                    color: #076FCD
+                      line-height: 140%
+                      color: #076FCD
 
-          .swiper-pagination
-            position: absolute
-            bottom: -80px
-            margin-bottom: 0
+            .swiper-pagination
+              position: absolute
+              bottom: -80px
+              margin-bottom: 0
 
-            .swiper-pagination-bullet
-              background: #828282
-              opacity: 0.7
-            .swiper-pagination-bullet-active
-              background: #828282
+              .swiper-pagination-bullet
+                background: #828282
+                opacity: 0.7
+              .swiper-pagination-bullet-active
+                background: #828282
 
-    .block__news-right
-      display: none
+      .block__news-right
+        display: none
 
 
 
