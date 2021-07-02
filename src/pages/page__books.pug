@@ -1,0 +1,9 @@
+extends ../layouts/static.pug
+
+block page-vars
+  - var title = 'Электронные учебники';
+  - var sidebar = true;
+
+block page-content
+  include ../components/el-books
+  include ../components/documents

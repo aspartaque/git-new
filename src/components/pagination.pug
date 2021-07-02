@@ -1,2 +1,15 @@
-.l-pagination
-  div im pagination
+nav.l-pagination(aria-label="Pagination")
+  ul.pagination
+    //Показывать если
+    //li.pagination-previous 
+      a(href="#") Предыдущая
+    li.current 1
+    li
+      a(href="#") 2
+    li
+      a(href="#") 3
+    li
+      a(href="#") 4
+    li.ellipsis
+    li.pagination-next
+      a(href="#") Далее

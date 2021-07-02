@@ -3,3 +3,71 @@
   display: -ms-flex
   display: flex
   margin-top: 60px
+
+.pagination
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  margin-bottom: 0
+
+.pagination li
+  margin-right: 6px
+  font-weight: normal
+  font-size: 14px
+  line-height: 13px
+  color: #02447E
+
+.pagination a
+  font-weight: normal
+  font-size: 14px
+  line-height: 13px
+  color: #02447E
+  width: 40px
+  height: 40px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 10px
+  &:hover
+    background: #F1F1F1
+    color: #02447E
+
+.pagination .pagination-previous a, .pagination .pagination-next a
+  font-weight: normal
+  font-size: 14px
+  line-height: 13px
+  color: #02447E
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center
+  width: auto
+  background: #F1F1F1
+  border-radius: 10px
+  color: #02447E
+
+.pagination li:first-child, .pagination li:last-child
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  
+.pagination-next a::after, .pagination-next.disabled::after
+  content: unset
+.pagination-previous a::before, .pagination-previous.disabled::before
+  content: unset
+
+.pagination .current
+  background: #F1F1F1
+  border-radius: 10px
+  color: #02447E
+  width: 40px
+  height: 40px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center
