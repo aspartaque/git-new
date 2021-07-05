@@ -85,3 +85,35 @@
         line-height: 28px
         text-decoration-line: underline
         color: #076FCD
+
+@include mobile
+  .l-detail-anounce
+    font-weight: bold
+    font-size: 18px
+    line-height: 170%
+
+  .l-detail-picture
+    img
+      height: 200px
+      width: 290px
+
+  .l-detail-content
+    p
+      font-size: 14px
+      line-height: 170%
+
+  .l-detail-footer
+    .l-detail-row
+      flex-direction: column-reverse
+      align-items: flex-start
+      &:first-child
+        flex-direction: row
+      .l-detail-return
+        margin-top: 40px
+        display: flex
+        justify-content: center
+        width: 100%
+      .l-detail-tags
+        ul
+          display: flex
+          flex-direction: column

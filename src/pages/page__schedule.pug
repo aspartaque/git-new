@@ -1,0 +1,34 @@
+extends ../layouts/static.pug
+
+block page-vars
+  - var title = 'Расписание';
+  - var sidebar = true;
+
+block page-content
+  .l-schedule-select
+    select.schedule__select-university
+      option(value, disabled) -- Выберите тип --
+      option(value="1") ВУЗ
+      option(value="2") Литература
+      option(value="3") Методика
+      
+    select.schedule__select-program
+      option(value, disabled) -- Выберите тип --
+      option(value="1") Духовые инструменты
+      option(value="2") Литература
+      option(value="3") Методика
+      
+    select.schedule__select-number
+      option(value, disabled) -- Выберите тип --
+      option(value="1") 1
+      option(value="2") 2
+      option(value="3") 3
+
+  .l-schedule-date
+    span Текущее полугодие
+    .schedule-date
+      span 24.05.2021 — 
+      span 30.05.2021
+
+  .l-schedule-table ТАБЛИЦА EXCEL С РАСПИСАНИЕМ
+    

@@ -1,0 +1,43 @@
+extends ../layouts/static.pug
+
+block page-vars
+  - var title = 'Интернет-приемная';
+  - var sidebar = true;
+
+block page-content
+  .l-reception-header
+    h3 Написать письмо
+    p 
+      | Поля, отмеченные *, обязательны для заполнения 
+      br
+      | Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных. 
+  form.l-reception
+    .l-reception-full__info
+      h3 В электронной анкете в Вашем обращении укажите*:
+      .l-reception-full__info-form
+        input.l-full__info-input(type="text", placeholder="Фамилия*" required)
+        input.l-full__info-input(type="text", placeholder="Имя*" required)
+        input.l-full__info-input(type="text", placeholder="Отчество*" required)
+        input.l-full__info-input(type="text", placeholder="Адрес электронной почты*" required)
+        input.l-full__info-input(type="text", placeholder="Номер телефона*" required)
+    .l-reception-ask__theme
+      h6 Тема вопроса
+      select
+        option(value, disabled) -- Выберите тип --
+        option(value="1") Методическая литература
+        option(value="2") Литература
+        option(value="3") Методика
+    .l-reception-appeal__text
+      h6 Текст обращения
+      textarea.l-full_info__input-first-name(type="", placeholder="Изложите суть жалобы или предложения*")
+    .l-reception-buttons
+      .reception-checkbox__btn
+        input.reception-checkbox(type="checkbox" required)
+        p Нажимая на кнопку 
+          span Отправить 
+          |  вы соглашаетесь с политикой обработки персональных данных
+      .reception-main__btn
+        input(type="button" value="Прикрепить файлы" class="l-reception__button" onclick="document.getElementById('file').click();")
+        input(type="file" style="display:none;" id="file")
+        button.l-reception__button-send(type="submit") Отправить
+    

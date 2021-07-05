@@ -1,0 +1,21 @@
+.detail-gallery-list
+  display: grid
+  grid-gap: 20px
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr))
+  a
+    img
+      height: auto
+
+@include tablet
+  .detail-gallery-list
+    grid-template-columns: repeat(auto-fill,minmax(190px,1fr))
+
+@include mobile
+  .detail-gallery-list
+    display: grid
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr))
+    grid-gap: 10px
+    justify-content: space-between
+    a
+      img
+        height: 100px

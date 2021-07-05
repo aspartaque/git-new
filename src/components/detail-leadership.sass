@@ -1,0 +1,28 @@
+@include tablet
+  .l-container
+    .l-page-static
+      .l-page-sidebar
+        display: none
+
+@include mobile
+  .l-container
+    width: 320px
+    .l-page-static
+      .l-page-sidebar
+        display: none
+
+  .l-leadership-item
+    flex-direction: column
+    align-items: center
+    .l-leadership-item__image
+      width: 100%
+      margin-right: 0
+      justify-content: center
+      img
+        max-width: none
+        width: 290px
+        height: 350px
+
+    .l-leadership-item__content
+      width: 100%
+      margin-top: 20px
