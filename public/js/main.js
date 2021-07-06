@@ -11,3 +11,9 @@ if (document.querySelector("#period_selector_news")) {
     },
   });
 }
+$(document).ready(function() {
+  let burger = document.querySelector('.l-1header-top__interactions-btn');
+  burger.addEventListener('click', function(){
+     this.classList.toggle('active');
+  });
+});

@@ -104,17 +104,20 @@ section.info_cards
     max-width: 310px
     width: 100%
     height: 390px
-    &::after
+    overflow: hidden
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+    &::before
       content: ""
       position: absolute
       width: 100%
-      height: 17px
+      height: 9px
+      right: 0
       left: 0
       top: 0
       background: #076FCD
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
-      border-top-left-radius: 20px
-      border-top-right-radius: 20px
 
   .block__card-img
     svg
@@ -251,7 +254,7 @@ section.info_cards
 
 
     .block__news-right
-      margin-left: 20px
+      margin-left: 40px
 
       .block__news-content
         display: flex
@@ -345,14 +348,13 @@ section.info_cards
   max-width: 1300px
   height: 375px
   display: flex
-  &::after
+  overflow: hidden
+  &::before
     position: absolute
     content: ""
     width: 100%
-    height: 17px
+    height: 9px
     background: #076FCD
-    border-top-left-radius: 20px
-    border-top-right-radius: 20px
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
 
 .block__ads__main-descr
@@ -437,7 +439,9 @@ section.info_cards
 .block__ads-descr
   margin-top: 80px
   padding-bottom: 100px
-  display: flex
+  display: grid
+  grid-template-columns: repeat(auto-fill,minmax(50%,1fr))
+  grid-template-rows: repeat(auto-fill,minmax(70px,70px))
 
 .block__ads__descr-title
   font-family: Gotham Pro
@@ -446,10 +450,14 @@ section.info_cards
   font-size: 30px
   line-height: 35px
   color: #076FCD
-  padding-right: 10px
+  padding-right: 50px
 
 .block__ads-descr-left
   padding-right: 110px
+
+.block__ads-descr-right
+  grid-column: 2
+  grid-row: 1
 
 .block__ads__descr-text
   margin-top: 20px
@@ -492,8 +500,6 @@ section.info_cards
   display: none
 
 @include tablet
-  header
-    display: none
 
   .l-container-banner
     width: 960px
@@ -509,7 +515,7 @@ section.info_cards
         padding: 80px 0px 80px 0px
         .block__info-row
           .block__info-card
-            width: 205px
+            width: 220px
             padding: 40px 0px 20px 0px
             .block__card-img
             .block__card-title
@@ -535,7 +541,8 @@ section.info_cards
           .block__news-left
             .block__news-card
               width: 430px
-              height: 540px
+              height: 100%
+              position: relative
               .block__news-title
                 a
                   font-weight: bold
@@ -546,9 +553,10 @@ section.info_cards
                   font-size: 14px
                   line-height: 24px
                 .more
-                  display: flex
-                  justify-content: flex-end
-                  align-items: center
+                  position: absolute
+                  bottom: 10px
+                  right: 10px
+                  display: block
                   a
                     font-size: 16px
                     line-height: 30px
@@ -557,6 +565,7 @@ section.info_cards
                     margin-left: 10px
 
           .block__news-right
+            margin-left: 20px
             .block__news-content
               .block__news-row
                 padding-bottom: 30px
@@ -598,7 +607,7 @@ section.info_cards
 
   .block__ads-row
     display: grid
-    grid-template-columns: 430px 430px
+    grid-template-columns: 1fr 1fr
     grid-template-rows: 354px
     justify-content: center
     grid-gap: 20px
@@ -607,6 +616,7 @@ section.info_cards
     a
       img
         border-radius: 10px
+        width: 100%
 
   .block__ads-descr
     justify-content: space-between
@@ -626,12 +636,13 @@ section.info_cards
 
   .block__ads-descr-right
   .block__ads__descr-img
-    width: 430px
+    width: 100%
+
 
 
 @include mobile_tablet
   .l-container-banner
-    width: 768px
+    width: 830px
     padding: 0
     section.banner
       .block__banner
@@ -654,7 +665,7 @@ section.info_cards
         padding: 80px 0px 80px 0px
         .block__info-row
           .block__info-card
-            width: 165px
+            width: 185px
             height: 355px
             padding: 30px 0px 20px 0px
             position: relative
@@ -676,8 +687,18 @@ section.info_cards
       .block__news
         padding: 80px 0px 80px 0px
         .block__news-main
+          .block__news-left
+            width: 100%
+            .block__news-card
+              height: 70%
+              position: relative
+              .block__news-text
+                .more
+                  position: absolute
+                  bottom: 10px
+                  right: 10px
           .block__news-right
-            width: 255px
+            width: 100%
 
 
   section.ads
@@ -699,12 +720,12 @@ section.info_cards
 
   .block__ads-row
     display: grid
-    grid-template-columns: 350px 430px
-    grid-template-rows: 354px
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
     justify-content: flex-start
     grid-gap: 10px
   .block__ads-card
-    width: 350px
+    width: 100%
 
   .block__ads-descr
     justify-content: space-between
@@ -712,6 +733,9 @@ section.info_cards
   .block__ads-descr-left
     padding-right: 0
     margin-right: 10px
+
+  .block__ads__descr-title
+    padding-right: 10px
 
   .block__ads__descr-text
     margin-top: 10px
@@ -797,11 +821,12 @@ section.info_cards
 
 
   .l-container
+    max-width: 414px
     width: 100%
     padding: 0px 15px 0px 15px
     section.news
       .block__news
-        padding: 80px 0px 80px 0px
+        padding: 0px 0px 80px 0px
         overflow: hidden
         .block__ads-top
           justify-content: center
@@ -880,6 +905,7 @@ section.info_cards
 
 
     .block__ads
+      padding-bottom: 40px
       .block__ads-top
         justify-content: center
         .block__ads-link
@@ -892,13 +918,6 @@ section.info_cards
       justify-content: center
 
     .block__ads-link
-      display: none
-
-    .block__ads-row
-      display: flex
-      flex-direction: column
-
-    .block__ads-descr
       display: none
 
     .block__ads-row
@@ -966,14 +985,18 @@ section.info_cards
         svg
           margin-left: 5px
 
-    .block__ads-descr-mobile
-      margin-top: 60px
-      margin-bottom: 61px
-      display: block
+    .block__ads-descr
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr
 
     .block__ads-descr-left
       padding: 0
       text-align: left
+      grid-row: 3
+      grid-column: 1
+      margin-top: 20px
+      margin-right: 0
 
     .block__ads__descr-title
       font-family: Gotham Pro
@@ -982,6 +1005,8 @@ section.info_cards
       font-size: 20px
       line-height: 30px
       color: #076FCD
+      grid-row: 1
+      grid-column: 1
 
     .block__ads__descr-text
       font-size: 14px
@@ -994,7 +1019,12 @@ section.info_cards
       max-width: 100%
 
     .block__ads-descr-right
+      margin-top: 20px
+      grid-row: auto
+      grid-column: auto
 
     .block__ads__descr-img
-      margin-top: 20px
       height: auto
+      width: 100%
+      img
+        width: 100%

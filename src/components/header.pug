@@ -30,6 +30,43 @@ header
             li
               a(href="#")
                 include ./icons/twitter.svg
+          .l-header-top__interactions-btn(type="button" data-toggle="offCanvasRightOverlap")
+            span.burger-menu__line
+          
+          .off-canvas.position-right(id="offCanvasRightOverlap" data-off-canvas data-transition="overlap")
+            .canvas-top  
+              include ./language
+              .l-header-top__interactions-btn(type="button" data-toggle="offCanvasRightOverlap")
+                span.burger-menu__line
+            include ./search-header
+            include ./nav-burger
+            .canvas-text
+              span г. Якутск, ш.Покровское, 16км, д. 2
+              span Приемная комиссия
+              span.canvas-text-date 9:00 до 20:00, Пн - Пт
+              span.canvas-text-date +7 (999) 999-99-99
+          
+            ul.l-interaction__socials
+              li
+                a(href="#")
+                  include ./icons/instagram.svg
+              li
+                a(href="#")
+                  include ./icons/2gis.svg
+              li
+                a(href="#")
+                  include ./icons/whatsapp.svg
+              li
+                a(href="#")
+                  include ./icons/telegram.svg
+              li
+                a(href="#")
+                  include ./icons/vk.svg
+              li
+                a(href="#")
+                  include ./icons/twitter.svg
+            
+            
   .l-header-middle
     .l-container
       .l-header-grid

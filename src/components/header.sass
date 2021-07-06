@@ -9,6 +9,7 @@ header
 
 .l-header-top
   padding: 10px 0
+  background: #F8F8F8
 
 .l-header-top__location
   display: -webkit-flex
@@ -143,5 +144,181 @@ header
   position: relative
 
 @include tablet
-  header
+  .l-header-bottom
     display: none
+  .l-header-top__location
+
+  .l-header-top__interactions
+    align-items: center
+    position: relative
+
+  .l-interaction__socials
+    display: none
+
+  .l-header-top__interactions-btn
+    width: 40px
+    height: 40px
+    background: #F1F1F1
+    border-radius: 10px
+    margin-left: 35px
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1
+    transition: .5s
+
+    .burger-menu__line
+      display: block
+      position: absolute
+      width: 27px
+      height: 2px
+      background-color: #076FCD
+      border-radius: 10px
+      top: 50%
+      transform: translateY(-50%)
+      transition: .3s all ease
+      &::before,&::after
+        position: absolute
+        display: block
+        content: ''
+        width: 27px
+        height: 2px
+        background-color: #076FCD
+        border-radius: 10px
+        transition: .3s all ease
+      &::before
+        top: -7px
+      &::after
+        bottom: -7px
+        transition: .3s all ease
+    &.active .burger-menu__line
+      background-color: transparent
+      &::before
+        transform: rotate(45deg)
+        top: 0
+        background-color: #076FCD
+      &::after
+        transform: rotate(-45deg)
+        bottom: 0
+        background-color: #076FCD
+
+  .off-canvas.is-transition-overlap.is-open
+    box-shadow: none
+    width: 345px
+    z-index: 15
+    background: #FFFFFF
+    padding: 10px 40px
+
+    .l-search-header__input
+      background: #F8F8F8
+      box-shadow: none
+      border: none
+      &:focus
+        border: 1px solid #076FCD
+
+    .vertical.menu.accordion-menu
+      width: 100%
+      li
+        margin-left: 0
+        height: 100%
+        border-bottom: 1px solid #F1F1F1
+        border-top: 1px solid #F1F1F1
+        a
+          padding: 20px 10px
+          font-size: 16px
+          line-height: 15px
+          color: #076FCD
+        ul
+          margin-left: 0
+
+          .l-container
+            padding: 0
+            width: 100%
+
+            .l-navigation__submenu
+              background: #F8F8F8
+              display: flex
+              flex-direction: column
+              margin: 0
+              li
+                border: none
+                a
+                  padding: 10px 10px
+                  font-size: 14px
+                  line-height: 15px
+
+    .dropdown.menu.l-navigation
+      flex-direction: column
+
+  .js-off-canvas-overlay
+    background: #000000
+    transition: .5s
+
+  .js-off-canvas-overlay.is-visible
+    opacity: .5
+
+  .canvas-text
+    display: flex
+    flex-direction: column
+    margin-top: 40px
+    align-items: center
+    span
+      text-align: center
+      font-weight: bold
+      font-size: 16px
+      line-height: 140%
+      color: #076FCD
+      margin-bottom: 20px
+      &:first-child
+        width: 70%
+        margin-bottom: 10px
+
+    span.canvas-text-date
+      font-weight: normal
+      font-size: 16px
+      line-height: 15px
+      color: #076FCD
+      margin-bottom: 12px
+      &:last-child
+        margin-bottom: 0
+
+  .off-canvas
+    ul.l-interaction__socials
+      display: grid
+      justify-content: center
+      margin-left: 0px
+      grid-template-columns: 40px 40px 40px
+      margin-top: 40px
+      grid-gap: 13px
+      padding-bottom: 40px
+      li
+        margin-right: 0
+        a
+          margin-right: 0
+
+  .canvas-top
+    display: flex
+    justify-content: space-between
+
+    .l-header-top__interactions-btn
+      .burger-menu__line
+        height: 0
+        &::before,&::after
+          position: absolute
+          display: block
+          content: ''
+          width: 27px
+          height: 2px
+          background-color: #076FCD
+          border-radius: 10px
+          transition: .3s all ease
+        &::before
+          transform: rotate(45deg)
+          top: -1px
+        &::after
+          transform: rotate(-45deg)
+          bottom: -1px
+          transition: .3s all ease
+      &:hover
+        background-color: #076FCD

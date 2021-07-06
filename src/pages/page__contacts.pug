@@ -1,0 +1,79 @@
+extends ../layouts/static.pug
+
+block page-vars
+  - var title = 'Интернет-приемная';
+  - var sidebar = true;
+
+block page-content
+  .l-contacts-wrapper
+    .l-contacts-map
+      script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A293730cf8b4108079303a902acc7c313f96265a21f1ce202ab2c2b38f0c57049&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true")
+    .l-contacts-info
+      .l-contacts-info-container
+        include ../components/icons/location1.svg
+        span.l-contacts-info-address г. Якутск, ш.Покровское, 16км, д. 2
+        span.l-contacts-info-work__time Пн - Пт: 9:00 до 20:00
+        span.l-contacts-info-work__time-wknd Сб - Вс: 9:00 до 20:00 
+        span.l-contacts-info-phone +7 (999) 999-99-99
+        
+      .l-contacts-info-container
+        include ../components/icons/location1.svg
+        span.l-contacts-info-address г. Якутск, ш.Покровское, 16км, д. 2
+        span.l-contacts-info-work__time Пн - Пт: 9:00 до 20:00
+        span.l-contacts-info-work__time-wknd Сб - Вс: 9:00 до 20:00 
+        span.l-contacts-info-phone +7 (999) 999-99-99
+    
+    .l-contacts-description
+      .l-contacts-icon 
+        include ../components/icons/geolocations.svg
+      .l-contacts-description-text
+        span.l-contacts-description-title Как к нам добраться?
+        span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    .l-contacts-eclipse__row
+      .l-contacts-eclipse__row-item
+        .l-contacts-icon 
+          include ../components/icons/mobile-phone.svg
+        .l-contacts-text
+          span.l-contacts-eclipse-title Телефон
+          span +7 (999) 299-14-41
+      .l-contacts-eclipse__row-item
+        .l-contacts-icon 
+          include ../components/icons/fax.svg
+        .l-contacts-text
+          span.l-contacts-eclipse-title Факс
+          span +7 (999) 299-14-41
+      .l-contacts-eclipse__row-item
+        .l-contacts-icon 
+          include ../components/icons/email-2.svg
+        .l-contacts-text
+          span.l-contacts-eclipse-title Эл.почта
+          span LoremIpsum@mail.ru
+        
+    .l-contacts-table-container
+      table.l-table-contacts
+        tr
+          th Пример таблицы excel
+          td Где можно указать любую информация
+        tr
+          th Должность
+          td Ректор
+        tr
+          th Lorem ipsum dolor
+          td Lorem ipsum dolor
+        tr
+          th Lorem ipsum dolor
+          td Lorem ipsum dolor
+        tr
+          th Lorem ipsum dolor
+          td Lorem ipsum dolor
+        tr
+          th Lorem ipsum dolor
+          td Lorem ipsum dolor
+        tr
+          th Lorem ipsum dolor
+          td Lorem ipsum dolor
+        tr
+          th Lorem ipsum dolor
+          td 4 года
+      

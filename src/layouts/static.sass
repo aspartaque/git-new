@@ -108,6 +108,8 @@
         padding: 10px 20px
         margin: 0
         box-shadow: none
+        &:focus
+          border: 1px solid #076FCD
   h6
     font-family: Gotham Pro
     font-style: normal
@@ -131,6 +133,8 @@
       background-position: right 0rem center
       box-shadow: none
       margin: 0
+      &:focus
+        border: 1px solid #076FCD
 
   .l-reception-appeal__text
     margin-top: 20px
@@ -148,6 +152,8 @@
       height: 150px
       max-width: 910px
       resize: vertical
+      &:focus
+        border: 1px solid #076FCD
 
   .l-reception-buttons
     margin-top: 20px
@@ -360,6 +366,8 @@
     background-size: 11px 10px
     background-position: right 0rem center
     box-shadow: none
+    &:focus
+      border: 1px solid #076FCD
     &:last-child
       margin-right: 0
   .schedule__select-university
@@ -384,6 +392,7 @@
     text-align: center
     color: #002543
   .schedule-date
+    display: flex
     span
       &:last-child
         margin-left: 5px
@@ -438,3 +447,207 @@
 @include mobile-tablet
   .l-schedule-select
     width: 100%
+
+/*Contacts*/
+.l-contacts-wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  .l-contacts-map
+    width: 100%
+    height: 350px
+    border-radius: 10px
+
+  .l-contacts-info
+    margin-top: 30px
+    display: flex
+    width: 100%
+    justify-content: space-between
+
+    .l-contacts-info-container
+      display: grid
+      flex-direction: column
+      svg
+        grid-column: 1
+        grid-row: 1
+      span.l-contacts-info-address
+        font-weight: normal
+        font-size: 20px
+        line-height: 19px
+        color: #076FCD
+        grid-column-start: 2
+        grid-column-end: 4
+        grid-row: 1
+        margin-left: 10px
+        margin-bottom: 10px
+      span.l-contacts-info-work__time
+        font-size: 14px
+        line-height: 20px
+        color: #828282
+        grid-column: 2
+        grid-row: 2
+        margin-left: 10px
+        margin-bottom: 5px
+      span.l-contacts-info-work__time-wknd
+        font-size: 14px
+        line-height: 20px
+        color: #828282
+        grid-column: 3
+        grid-row: 2
+        margin-left: 10px
+        margin-bottom: 5px
+      span.l-contacts-info-phone
+        font-size: 14px
+        line-height: 20px
+        color: #828282
+        grid-column: 2
+        grid-row: 3
+        margin-left: 10px
+
+  .l-contacts-description
+    padding: 30px 20px 20px 20px
+    background: #F8F8F8
+    margin-top: 60px
+    display: flex
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      height: 100%
+      width: 10px
+      background: #076FCD
+    .l-contacts-icon
+      width: 100px
+      height: 100px
+      background: #F1F1F1
+      border-radius: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-left: 20px
+      svg
+        width: 40px
+        height: 40px
+        g
+          clip-path: url(../components/icons/)
+
+    .l-contacts-description-text
+      display: flex
+      flex-direction: column
+      margin-left: 40px
+      width: 70%
+      justify-content: center
+      .l-contacts-description-title
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        color: #076FCD
+      span
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        color: #002543
+
+  .l-contacts-eclipse__row
+    display: flex
+    margin-top: 40px
+    width: 100%
+    justify-content: space-between
+    .l-contacts-eclipse__row-item
+      display: flex
+      .l-contacts-icon
+        width: 100px
+        height: 100px
+        background: #F1F1F1
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+      .l-contacts-text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-left: 10px
+        .l-contacts-eclipse-title
+          font-weight: bold
+          font-size: 18px
+          line-height: 25px
+          color: #076FCD
+        span
+          font-size: 14px
+          line-height: 28px
+          color: #002543
+
+  .l-contacts-table-container
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin-top: 40px
+    .l-table-contacts
+      tr
+        th
+          font-size: 14px
+          line-height: 20px
+          color: #076FCD
+          text-align: left
+          padding-left: 30px
+
+@include tablet
+  .l-contacts-wrapper
+    .l-contacts-map
+      width: 100%
+      height: 630px
+
+@include mobile
+  .l-contacts-wrapper
+    .l-contacts-map
+      width: 100%
+      height: 230px
+
+    .l-contacts-info
+      flex-direction: column
+      .l-contacts-info-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20px
+        &:last-child
+          margin-bottom: 0
+        span.l-contacts-info-address
+          width: 66%
+          text-align: center
+          margin-left: 0
+          margin-top: 10px
+
+    .l-contacts-description
+      flex-direction: column
+      align-items: center
+      .l-contacts-icon
+        margin-left: 0
+        margin-bottom: 20px
+      .l-contacts-description-text
+        margin-left: 0
+        width: 100%
+        .l-contacts-description-title
+          margin-bottom: 10px
+        span
+          text-align: center
+
+    .l-contacts-eclipse__row
+      flex-direction: column
+      width: 80%
+      margin: 0 auto
+      margin-top: 30px
+      .l-contacts-eclipse__row-item
+        margin-bottom: 20px
+        &:last-child
+          margin-bottom: 0
+
+    .l-contacts-table-container
+      .l-table-contacts
+        tr
+          th
+            padding: .5rem 15px
