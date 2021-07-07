@@ -10,5 +10,15 @@
   line-height: 19px
   color: #4F4F4F
   margin-bottom: 15px
-  
+
 .l-share-span
+  display: flex
+  a
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+
+@include mobile
+  .l-share
+    width: 100%
+    align-items: center

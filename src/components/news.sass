@@ -67,6 +67,15 @@
   line-height: 24px
   color: #002543
 
+@include tablet
+  .l-news-list
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr))
+    grid-gap: 20px
+    .l-article-picture
+      img
+        max-height: 220px
+        height: 100%
+
 @include mobile-tablet
   .l-news-list
     display: grid

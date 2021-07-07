@@ -143,6 +143,24 @@ header
   height: 80px
   position: relative
 
+@media screen and (max-width: 1025px)
+  .l-navigation.dropdown.menu>li.is-dropdown-submenu-parent>a
+    height: 20px
+  .l-navigation.dropdown.menu>li.is-dropdown-submenu-parent
+    height: 100%
+    display: flex
+    align-items: center
+    margin-left: 20px
+  .l-navigation.dropdown.menu>li+li
+    height: 100%
+    display: flex
+    align-items: center
+  .l-navigation
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    align-items: center
+
+
 @include tablet
   .l-header-bottom
     display: none
@@ -192,16 +210,15 @@ header
       &::after
         bottom: -7px
         transition: .3s all ease
-    &.active .burger-menu__line
-      background-color: transparent
-      &::before
-        transform: rotate(45deg)
-        top: 0
-        background-color: #076FCD
-      &::after
-        transform: rotate(-45deg)
-        bottom: 0
-        background-color: #076FCD
+    &:hover .burger-menu__line::after
+      background-color: #FFFFFF
+    &:hover .burger-menu__line::before
+      background-color: #FFFFFF
+    &:hover .burger-menu__line
+      background-color: #FFFFFF
+    &:hover
+      background-color: #076FCD
+
 
   .off-canvas.is-transition-overlap.is-open
     box-shadow: none
@@ -237,7 +254,7 @@ header
             width: 100%
 
             .l-navigation__submenu
-              background: #F8F8F8
+              border-left: 4px solid #076FCD
               display: flex
               flex-direction: column
               margin: 0
@@ -320,5 +337,61 @@ header
           transform: rotate(-45deg)
           bottom: -1px
           transition: .3s all ease
+      &:hover .burger-menu__line::after
+        background-color: #FFFFFF
+      &:hover .burger-menu__line::before
+        background-color: #FFFFFF
       &:hover
         background-color: #076FCD
+
+  .l-header-middle
+    padding: 15px 0px
+
+.l-header-top__interactions
+  .l-header-middle__logo
+    display: none
+
+@include mobile_tablet
+  .l-interaction__visually
+    span
+      display: none
+  .l-header-middle
+    padding: 15px 0px
+
+@include mobile
+  .l-header-top__interactions-btn
+    margin-left: 0
+
+  .l-interaction__visually
+    span
+      display: none
+
+  .l-interaction__language
+    display: none
+
+  .l-header-top__location
+    display: none
+
+  .l-header-middle
+    display: none
+
+  .l-header-top__interactions
+    justify-content: space-between
+    .l-header-middle__logo
+      display: flex
+      justify-content: center
+      img
+        width: 33px
+        height: 33px
+      span
+        font-size: 12px
+        line-height: 13px
+        margin-left: 5px
+        width: 65%
+
+  .l-interaction__visually
+    margin-left: 0
+
+  .off-canvas
+    .l-interaction__language
+      display: flex

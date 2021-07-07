@@ -103,6 +103,8 @@ ul.menu
 .l-footer-left__bottom__info-links
   display: flex
   align-items: center
+  a:hover
+    color: #188ffb
 
 .l-footer-right
   display: flex
@@ -121,6 +123,12 @@ a.bottom__info-icon
 .bottom__info-text
   margin-left: 5px
 
+.l-footer__block__links
+  li
+    a
+      transition: .3s
+      &:hover
+        color: #188ffb
   /*Footer Top Right*/
 
 .l-footer__right-contacts
@@ -172,7 +180,8 @@ a.bottom__info-icon
   fill: #DEEFFF
   transition: .3s
   &:hover
-    fill: #1779ba
+    fill: #111
+    color: #FFFFFF
 
 .l-footer__bottom__developed-text
   margin-right: 5px
@@ -348,7 +357,9 @@ a.icon-twitter
 /*ADAPTIVE-MOBILE*/
 
 @media screen and (max-width: 425px)
-
+  footer
+    .l-container
+      padding: 0px 15px
   .l-footer
     display: none
 
@@ -358,11 +369,12 @@ a.icon-twitter
 
   .l-footer-mobile
     display: block
-    padding: 0
+    padding: 0px 10px
     .l-footer-top
       flex-direction: column
       display: flex
       .l-footer__top-left
+        padding: 0px 10px
         .l-footer__block__links
           margin-top: 0
           display: grid
@@ -370,6 +382,7 @@ a.icon-twitter
           grid-template-columns: 50% 50%
           grid-template-rows: 1fr 1fr 1fr
           justify-content: center
+          padding-left: 30px
           li
             list-style: none
             margin-bottom: 40px

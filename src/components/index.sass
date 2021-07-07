@@ -58,7 +58,7 @@
                     color: #FFFFFF
                     transition: .3s
                   &:hover .banner__slide-button
-                    background: #076FEE
+                    background: #188ffb
 
 
 .swiper-pagination
@@ -146,6 +146,9 @@ section.info_cards
         text-align: center
         color: #076FCD
         text-align: center
+        transition: .3s
+        &:hover
+          color: #188ffb
 
   .block__card-button
     margin-top: 20px
@@ -157,6 +160,9 @@ section.info_cards
     display: flex
     justify-content: center
     align-items: center
+    transition: .3s
+    &:hover
+      background: #188ffb
 
     span
       font-weight: normal
@@ -183,7 +189,11 @@ section.info_cards
       .swiper-pagination-bullet-active
         background: #828282
 
-
+.block__ads-link
+  a
+    transition: .3s
+    &:hover
+      color: #188ffb
 
 .block__news
   background: #FFFFFF
@@ -199,6 +209,7 @@ section.info_cards
 
       .block__news-card
         width: 640px
+        max-height: 550px
         height: 100%
         background: #FFFFFF
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
@@ -239,6 +250,9 @@ section.info_cards
             font-size: 20px
             line-height: 25px
             color: #076FCD
+            transition: .3s
+            &:hover
+              color: #188ffb
 
         .block__news-text
           margin-left: 10px
@@ -285,6 +299,9 @@ section.info_cards
               font-size: 18px
               line-height: 25px
               color: #076FCD
+              transition: .3s
+              &:hover
+                color: #188ffb
 
           .block__news__content-text
             span
@@ -307,6 +324,9 @@ section.info_cards
               a
                 font-size: 16px
                 line-height: 25px
+                transition: .3s
+                &:hover
+                  color: #188ffb
             .block__news__content-text
               span
                 font-size: 14px
@@ -390,7 +410,7 @@ section.info_cards
   margin-top: 45px
   transition: .3s
   &:hover
-    background: #02447E
+    background: #188ffb
     color: white
 
 .block__ads__main-img
@@ -428,6 +448,9 @@ section.info_cards
   font-size: 18px
   line-height: 25px
   color: #076FCD
+  transition: .3s
+  &:hover
+    color: #188ffb
 
 .block__ads__card-text
   margin-top: 10px
@@ -446,7 +469,7 @@ section.info_cards
 .block__ads__descr-title
   font-family: Gotham Pro
   font-style: normal
-  font-weight: normal
+  font-weight: bold
   font-size: 30px
   line-height: 35px
   color: #076FCD
@@ -487,7 +510,7 @@ section.info_cards
   margin-top: 40px
   transition: .3s
   &:hover
-    background: #02447E
+    background: #188ffb
     color: white
 
 .block__ads-link-mobile
@@ -508,11 +531,18 @@ section.info_cards
   .l-container
     max-width: none
     width: 960px
-    padding: 0 15px
+    padding: 0 30px
     margin: 0 auto
+    &:nth-of-type(4)
+      background: #F8F8F8
+    &:nth-of-type(2)
+      background: #F8F8F8
+      padding-top: 20px
+
     section.info_cards
+      margin-top: 540px
       .block__info
-        padding: 80px 0px 80px 0px
+        padding: 40px 0px 80px 0px
         .block__info-row
           .block__info-card
             width: 220px
@@ -536,7 +566,7 @@ section.info_cards
 
     section.news
       .block__news
-        padding: 80px 0px 80px 0px
+        padding: 40px 0px 80px 0px
         .block__news-main
           .block__news-left
             .block__news-card
@@ -576,6 +606,7 @@ section.info_cards
                   padding-bottom: 0
 
                 .block__news__content-date
+                  margin-bottom: 10px
                   span
                     font-size: 14px
                     line-height: 13px
@@ -593,6 +624,7 @@ section.info_cards
 
   section.news
   .block__ads
+    padding-top: 40px
   .block__ads-main
   .block__ads__main-descr
     padding: 40px 30px 40px 30px
@@ -661,6 +693,7 @@ section.info_cards
     width: 100%
     padding: 0px 30px 0px 30px
     section.info_cards
+      margin-top: 480px
       .block__info
         padding: 80px 0px 80px 0px
         .block__info-row
@@ -685,7 +718,7 @@ section.info_cards
 
     section.news
       .block__news
-        padding: 80px 0px 80px 0px
+        padding: 60px 0px 80px 0px
         .block__news-main
           .block__news-left
             width: 100%
@@ -700,9 +733,14 @@ section.info_cards
           .block__news-right
             width: 100%
 
+            .block__news-content
+              .block__news-row
+                padding-bottom: 20px
+                margin-top: 20px
 
   section.ads
   .block__ads
+    padding-top: 60px
   .block__ads-main
   .block__ads__main-descr
     position: relative
@@ -753,6 +791,7 @@ section.info_cards
     max-width: 426px
     position: static
     section.banner
+      margin-bottom: 0
       .block__banner
         .banner-slider
           height: 320px
@@ -784,6 +823,10 @@ section.info_cards
   .l-container
     width: 425px
     padding: 0px 15px 0px 15px
+    &:nth-of-type(4)
+      background: #FFFFFF
+    &:nth-of-type(2)
+      background: #FFFFFF
     section.info_cards
       margin-top: 0
       .block__info
@@ -819,14 +862,18 @@ section.info_cards
               position: absolute
               bottom: 10px
 
-
   .l-container
-    max-width: 414px
+    max-width: 425px
     width: 100%
     padding: 0px 15px 0px 15px
+    &:nth-of-type(4)
+      background: #F8F8F8
+    &:nth-of-type(2)
+      background: #F8F8F8
+      padding-top: 80px
     section.news
       .block__news
-        padding: 0px 0px 80px 0px
+        padding: 40px 0px 120px 0px
         overflow: hidden
         .block__ads-top
           justify-content: center
@@ -976,7 +1023,7 @@ section.info_cards
     .block__ads-link-mobile
       display: flex
       justify-content: center
-      margin-top: 20px
+      margin-top: 40px
       a
         font-weight: normal
         font-size: 16px

@@ -410,7 +410,24 @@
   display: flex
   align-items: center
   justify-content: center
-  background: #BDBDBD
+  table
+    width: 100%
+    height: 100%
+    margin-bottom: 0
+    th
+      width: 20%
+      font-weight: normal
+    td
+      width: 50%
+    .l-schedule-table-title
+      th
+        font-weight: bold
+      td
+        font-weight: bold
+
+@include tablet
+  .l-schedule-table
+    height: 100%
 
 @include mobile
   .l-schedule-select
@@ -442,7 +459,7 @@
         margin-left: 0
 
   .l-schedule-table
-    height: 250px
+    height: 100%
 
 @include mobile-tablet
   .l-schedule-select
@@ -458,6 +475,8 @@
     width: 100%
     height: 350px
     border-radius: 10px
+    border: 1px solid #076fcd
+    padding: 3px
 
   .l-contacts-info
     margin-top: 30px
@@ -601,6 +620,15 @@
       width: 100%
       height: 630px
 
+@include mobile-tablet
+  .l-contacts-wrapper
+    .l-contacts-eclipse__row
+      display: grid
+      grid-gap: 10px
+      grid-template-columns: 1fr 1fr
+      .l-contacts-eclipse__row-item
+        .l-contacts-icon
+
 @include mobile
   .l-contacts-wrapper
     .l-contacts-map
@@ -637,6 +665,7 @@
           text-align: center
 
     .l-contacts-eclipse__row
+      display: flex
       flex-direction: column
       width: 80%
       margin: 0 auto
