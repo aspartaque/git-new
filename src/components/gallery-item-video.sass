@@ -4,6 +4,8 @@
   display: flex
   flex-direction: column
   position: relative
+  &:hover .l-gallery-item-video__title
+    color: #188ffb
   img
     height: 170px
 
@@ -21,6 +23,7 @@
   line-height: 20px
   color: #076FCD
   margin-top: 20px
+  transition: .3s
 
 @include mobile
   .l-gallery-item-video__title
