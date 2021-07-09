@@ -92,29 +92,40 @@
     line-height: 13px
     color: #FFFFFF
 
+@include mobile-tablet
+  .l-page-content__inner
+    .l-gallery-list
+      grid-template-columns: 1fr 1fr 1fr
+      .l-article-title
+        font-weight: 500
+        font-size: 14px
+        line-height: 18px
+        color: #076fcd
+
 @include mobile
-  .l-gallery-list
-    grid-template-columns: repeat(auto-fill,minmax(140px,1fr))
-    grid-gap: 10px
-    justify-content: space-between
+  .l-page-content__inner
+    .l-gallery-list
+      grid-template-columns: repeat(auto-fill,minmax(140px,1fr))
+      grid-gap: 10px
+      justify-content: space-between
 
-    article.l-article
-      .l-article-picture
-        a
-          img
-            height: 155px
+      article.l-article
+        .l-article-picture
+          a
+            img
+              height: 155px
 
-    .l-article-counter
-      bottom: 20px
+      .l-article-counter
+        bottom: 20px
 
-    .l-article-title
-      font-weight: bold
-      font-size: 10px
-      line-height: 140%
+      .l-article-title
+        font-weight: bold
+        font-size: 10px
+        line-height: 140%
 
-    .l-article-date
-      font-size: 10px
-      line-height: 10px
+      .l-article-date
+        font-size: 10px
+        line-height: 10px
 
   .l-timeline
     margin-bottom: 30px
