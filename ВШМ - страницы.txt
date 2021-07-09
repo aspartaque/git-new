@@ -1,0 +1,17 @@
+https://aspartaque.github.io/git-new/public/index.html  -  Главная
+https://aspartaque.github.io/git-new/public/detail__cathedra.html  -  Кафедра специального фортепиано
+https://aspartaque.github.io/git-new/public/page__gallery.html  -  Галерея
+https://aspartaque.github.io/git-new/public/detail__gallery.html  -  Галерея (Детальная)
+https://aspartaque.github.io/git-new/public/page__leadership.html  -  Руководство
+https://aspartaque.github.io/git-new/public/detail__leadership.html  -  Руководство (Детальная)
+https://aspartaque.github.io/git-new/public/page__news.html  -  Новости
+https://aspartaque.github.io/git-new/public/detail__news.html  -  Новости (Детальная)
+https://aspartaque.github.io/git-new/public/page__basic-information.html  -  Основные сведения
+https://aspartaque.github.io/git-new/public/page__books.html  -  Электронные книги
+https://aspartaque.github.io/git-new/public/page__commission.html  -  приемная комиссия
+https://aspartaque.github.io/git-new/public/page__contacts.html  -  Контакты
+https://aspartaque.github.io/git-new/public/page__documents.html  -  Документы
+https://aspartaque.github.io/git-new/public/page__managment-structure.html  -  Структура управления образовательной организацией
+https://aspartaque.github.io/git-new/public/page__reception.html  -  Интернет-приемная
+https://aspartaque.github.io/git-new/public/page__rectors-column.html  -  Колонка ректора
+https://aspartaque.github.io/git-new/public/page__schedule.html  -  Расписание
