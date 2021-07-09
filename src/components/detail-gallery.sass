@@ -4,11 +4,24 @@
   grid-template-columns: repeat(auto-fill,minmax(250px,1fr))
   a
     img
-      height: auto
+      height: 170px
 
 @include tablet
   .detail-gallery-list
-    grid-template-columns: repeat(auto-fill,minmax(190px,1fr))
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    a
+      img
+        height: 100%
+
+@include mobile-tablet
+  .l-page-content__inner
+    .l-gallery-list
+      grid-template-columns: 1fr 1fr 1fr
+      .l-article-title
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        color: #076fcd
 
 @include mobile
   .detail-gallery-list

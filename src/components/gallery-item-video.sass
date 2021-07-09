@@ -11,7 +11,7 @@
 
 .l-gallery-item-video__play
   position: absolute
-  top: calc(50% - 60px)
+  top: calc(50% - 70px)
   left: calc(50% - 30px)
   display: -webkit-flex
   display: -ms-flex
@@ -25,6 +25,24 @@
   margin-top: 20px
   transition: .3s
 
+@include tablet
+  .l-page-content__inner
+    .l-gallery-list
+      grid-template-columns: 1fr 1fr 1fr 1fr
+      .l-gallery-item-video
+        img
+          height: 120px
+          max-width: 190px
+          width: 100%
+
+@include mobile-tablet
+  .l-gallery-item-video__title
+    display: none
+  .l-gallery-item-video__play
+    position: absolute
+    top: calc(50% - 30px)
+    left: calc(50% - 30px)
+
 @include mobile
   .l-gallery-item-video__title
     display: none
@@ -33,3 +51,6 @@
     position: absolute
     top: calc(50% - 30px)
     left: calc(50% - 30px)
+  .l-page-content__inner
+    .l-gallery-list
+      grid-template-columns: 1fr 1fr
