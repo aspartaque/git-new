@@ -3,6 +3,8 @@
   display: -ms-flex
   display: flex
   margin-top: 60px
+  justify-content: space-between
+  align-items: center
 
 .pagination
   display: -webkit-flex
@@ -54,7 +56,7 @@
   display: -webkit-flex
   display: -ms-flex
   display: flex
-  
+
 .pagination-next a::after, .pagination-next.disabled::after
   content: unset
 .pagination-previous a::before, .pagination-previous.disabled::before
@@ -71,3 +73,25 @@
   display: flex
   align-items: center
   justify-content: center
+
+.pagination-gallery
+  display: none
+
+.l-gallery-pagination
+  .pagination-gallery
+    display: flex
+    list-style: none
+    margin: 0
+    a
+      display: flex
+      align-items: center
+      svg
+        margin-right: 8px
+      span
+        font-family: Gotham Pro
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 13px
+        text-align: center
+        color: #02447E
