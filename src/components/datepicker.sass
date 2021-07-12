@@ -1,7 +1,6 @@
 .period-selector
     display: flex
     align-items: center
-
     &__label
         width: 224px
         flex-shrink: 0
@@ -19,7 +18,6 @@
         padding: 24px 32px
         color: #9599AD
         // width: 400px !important
-
         .cell
             height: 32px !important
             line-height: 32px !important
@@ -100,6 +98,7 @@
   display: flex
   align-items: center
   position: relative
+  justify-content: flex-start
 
 .period-selector__datepicker
   position: relative
@@ -141,3 +140,6 @@
   width: 30px
   height: 1px
   background: #E4E6E9
+
+.vdp-datepicker__calendar:nth-of-type(2)
+  left: -100%

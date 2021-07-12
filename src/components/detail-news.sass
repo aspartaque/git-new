@@ -16,17 +16,24 @@
 .l-detail-footer
   display: -webkit-flex
   display: -ms-flex
-  display: flex
+  display: grid
   flex-direction: column
   margin-top: 100px
 
 .l-detail-row
+  grid-column-start: 1
+  grid-column-end: 3
   display: -webkit-flex
   display: -ms-flex
   display: flex
   justify-content: space-between
   align-items: center
   &+&
+    margin-top: 40px
+  &:nth-of-type(2)
+    grid-column-start: 1
+    grid-column-end: 2
+  &:last-child
     margin-top: 40px
 
 .l-detail-date
@@ -68,6 +75,8 @@
       margin-left: 4px
 
 .l-detail-tags
+  grid-column: 2
+  margin-top: 40px
   ul
     display: -webkit-flex
     display: -ms-flex
@@ -75,6 +84,7 @@
     padding: 0
     margin: 0
     list-style: none
+    justify-content: flex-end
     li
       margin-right: 10px
       &:last-child
@@ -85,6 +95,8 @@
         line-height: 28px
         text-decoration-line: underline
         color: #076FCD
+
+@include tablet
 
 @include mobile
   .l-detail-anounce
@@ -108,12 +120,26 @@
       align-items: flex-start
       &:first-child
         flex-direction: row
+        margin-top: 30px
+      &:nth-of-type(2)
+        grid-column-start: 1
+        grid-column-end: 3
       .l-detail-return
         margin-top: 40px
         display: flex
         justify-content: center
         width: 100%
       .l-detail-tags
+        grid-column: 1
+        grid-row: 1
         ul
           display: flex
           flex-direction: column
+
+  .l-detail-tags
+    grid-column: 1
+    grid-row: 1
+    margin-top: 0
+    ul
+      display: flex
+      flex-direction: column

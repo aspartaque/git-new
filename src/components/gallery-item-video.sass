@@ -11,7 +11,7 @@
 
 .l-gallery-item-video__play
   position: absolute
-  top: calc(50% - 70px)
+  top: calc(50% - 60px)
   left: calc(50% - 30px)
   display: -webkit-flex
   display: -ms-flex
@@ -34,23 +34,33 @@
           height: 120px
           max-width: 190px
           width: 100%
+        .l-gallery-item-video__play
+          position: absolute
+          top: calc(50% - 70px)
+          left: calc(50% - 30px)
 
-@include mobile-tablet
+@include mobile_tablet
   .l-gallery-item-video__title
     display: none
-  .l-gallery-item-video__play
-    position: absolute
-    top: calc(50% - 30px)
-    left: calc(50% - 30px)
+  .l-page-content__inner
+    .l-gallery-list
+      .l-gallery-item-video
+        .l-gallery-item-video__play
+          position: absolute
+          top: calc(50% - 30px)
+          left: calc(50% - 30px)
 
 @include mobile
   .l-gallery-item-video__title
     display: none
 
-  .l-gallery-item-video__play
-    position: absolute
-    top: calc(50% - 30px)
-    left: calc(50% - 30px)
+  .l-page-content__inner
+    .l-gallery-list
+      .l-gallery-item-video
+        .l-gallery-item-video__play
+          position: absolute
+          top: calc(50% - 30px)
+          left: calc(50% - 30px)
   .l-page-content__inner
     .l-gallery-list
       grid-template-columns: 1fr 1fr

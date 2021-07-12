@@ -6,9 +6,15 @@
   padding: 0
   margin: 0 auto
   position: absolute
-  @media screen and (max-width: 1330px)
+  @media screen and (max-width: 1420px)
     margin: 0 auto
     width: 1420px
+  @media screen and (max-width: 1330px)
+    margin: 0 auto
+    width: 1310px
+  @media screen and (max-width: 1200px)
+    margin: 0 auto
+    width: 1310px
   section.banner
     margin-bottom: 0
     .block__banner
@@ -137,7 +143,7 @@ section.info_cards
     span
       font-family: Gotham Pro
       font-style: normal
-      font-weight: normal
+      font-weight: 500
       font-size: 30px
       line-height: 29px
       color: #002543
@@ -729,10 +735,12 @@ section.info_cards
     grid-gap: 20px
   .block__ads-card
     width: 100%
-    a
-      img
-        border-radius: 10px
-        width: 100%
+    .block__ads__card-img
+      height: 205px
+      a
+        img
+          border-radius: 10px
+          width: 100%
 
   .block__ads-descr
     justify-content: space-between
