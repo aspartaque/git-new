@@ -881,8 +881,9 @@ section.info_cards
 
   .l-container-banner
     padding: 0
-    max-width: 426px
-    position: static
+    max-width: none
+    width: 100%
+    position: absolute
     section.banner
       margin-bottom: 0
       .block__banner
@@ -894,6 +895,7 @@ section.info_cards
                 .banner__slide
                   img
                     width: 100%
+                    max-width: none
                     height: 320px
                   .banner__slide-title
                     span
@@ -924,19 +926,19 @@ section.info_cards
     &:nth-of-type(2)
       background: #FFFFFF
     section.info_cards
-      margin-top: 0
-      padding-top: 0
+      margin-top: 320px
+      padding: 0px 15px 0px 15px
       .block__info
         padding: 0px 0px 50px 0px
         .block__info-row
           display: grid
-          grid-gap: 15px
-          grid-template-columns: 180px 180px
+          grid-gap: 10px
+          grid-template-columns: 1fr 1fr
           justify-content: center
           .block__info-card
-            max-width: 180px
+            max-width: none
             width: 100%
-            height: 180px
+            height: 190px
             padding: 25px 0px 10px 0px
             position: relative
             .block__card-img
@@ -954,30 +956,37 @@ section.info_cards
             .block__card-text
               display: none
             a.block__card-button
-              width: 160px
+              width: 90%
               height: 40px
               margin: 0
               position: absolute
               bottom: 10px
 
   .l-container
-    max-width: 425px
+    max-width: none
     width: 100%
-    padding: 0px 15px 0px 15px
+    padding: 0
     &:nth-of-type(4)
       background: #F8F8F8
     &:nth-of-type(2)
       background: #F8F8F8
       padding-top: 40px
     section.news
+      padding: 0px 15px 0px 15px
+      width: 320px
+      margin-left: auto
+      margin-right: auto
       .block__news
-        padding: 40px 0px 120px 0px
+        padding: 40px 0px 0px 0px
         overflow: hidden
         .block__ads-top
           justify-content: center
           .block__ads-link
             display: none
         .block__news-main
+          width: 100%
+          padding: 0px 0px 120px 0px
+          overflow: hidden
           .block__news-left
             display: none
           .swiper-container-mobile__news
@@ -989,7 +998,7 @@ section.info_cards
               .swiper-slide
                 height: 217px
                 .block__news-card
-                  max-width: 182px
+                  max-width: none
                   width: 100%
                   height: 250px
                   border: 1px solid #F1F1F1
@@ -1001,7 +1010,7 @@ section.info_cards
                     a
                       img
                         border-radius: 10px
-                        max-width: 180px
+                        max-width: none
                         width: 100%
                     .block__news__img-date
                       position: absolute
@@ -1077,21 +1086,25 @@ section.info_cards
       overflow: hidden
       position: relative
       padding-bottom: 40px
+      max-width: 320px
+      margin-left: auto
+      margin-right: auto
 
       .swiper-wrapper
         .swiper-slide
-          width: 180px
+          width: 100%
           .block__ads-card-mobile
             border: 1px solid #F1F1F1
             box-sizing: border-box
             border-radius: 10px
-            width: 182px
+            width: 100%
+            min-width: 140px
             margin: 0 auto
             height: 250px
             .block__ads__card-img-mobile
               a
                 img
-                  width: 180px
+                  width: 100%
                   height: 100%
                   border-radius: 10px
 
@@ -1137,6 +1150,7 @@ section.info_cards
       display: grid
       grid-template-columns: 1fr
       grid-template-rows: 1fr
+      padding: 0 15px 0 15px
 
     .block__ads-descr-left
       padding: 0
