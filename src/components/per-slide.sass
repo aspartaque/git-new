@@ -3,6 +3,7 @@
   display: -ms-flex
   display: flex
   position: relative
+  height: 100%
 
 .l-per-slide-picture
   width: 100%
@@ -60,3 +61,18 @@
   &:hover
     background: #188ffb
     color: #fff
+
+@include mobile
+  .l-per-slide-content
+    align-items: center
+  .l-per-slide-title
+    font-size: 25px
+    line-height: 24px
+    margin-bottom: 10px
+  .l-per-slide-anonce
+    font-size: 14px
+    line-height: 13px
+  .l-per-slide-link
+    font-size: 14px
+    line-height: 13px
+    margin-top: 90px

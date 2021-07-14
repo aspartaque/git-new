@@ -365,7 +365,6 @@ a.icon-twitter
   .l-footer
     display: none
 
-
   .block__ads-descr-mobile
     display: block
 
@@ -384,7 +383,7 @@ a.icon-twitter
           grid-template-columns: 50% 50%
           grid-template-rows: 1fr 1fr 1fr
           justify-content: center
-          padding-left: 0
+          padding-left: 70px
           li
             list-style: none
             margin-bottom: 40px
@@ -523,3 +522,17 @@ a.icon-twitter
 
   .l-footer__left-link
     width: 100%
+
+@media screen and (max-width: 425px)
+  .l-footer-mobile
+    .l-footer-top
+      .l-footer__top-left
+        .l-footer__block__links
+          padding-left: 30px
+
+@media screen and (max-width: 360px)
+  .l-footer-mobile
+    .l-footer-top
+      .l-footer__top-left
+        .l-footer__block__links
+          padding-left: 0px

@@ -96,7 +96,13 @@
         text-decoration-line: underline
         color: #076FCD
 
-@include tablet
+@include mobile-tablet
+  .l-detail-tags ul
+    flex-direction: column
+    li
+      text-align: right
+      margin-right: 0
+
 
 @include mobile
   .l-detail-anounce
@@ -143,3 +149,5 @@
     ul
       display: flex
       flex-direction: column
+      li
+        text-align: left
