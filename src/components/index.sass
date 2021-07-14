@@ -884,6 +884,8 @@ section.info_cards
     max-width: none
     width: 100%
     position: absolute
+    left: 0
+    right: 0
     section.banner
       margin-bottom: 0
       .block__banner
@@ -927,7 +929,7 @@ section.info_cards
       background: #FFFFFF
     section.info_cards
       margin-top: 320px
-      padding: 0px 15px 0px 15px
+      padding: 0px
       .block__info
         padding: 0px 0px 50px 0px
         .block__info-row
@@ -965,14 +967,14 @@ section.info_cards
   .l-container
     max-width: none
     width: 100%
-    padding: 0
+    padding: 0 15px
     &:nth-of-type(4)
       background: #F8F8F8
     &:nth-of-type(2)
       background: #F8F8F8
       padding-top: 40px
     section.news
-      padding: 0px 15px 0px 15px
+      padding: 0
       width: 320px
       margin-left: auto
       margin-right: auto
@@ -985,7 +987,7 @@ section.info_cards
             display: none
         .block__news-main
           width: 100%
-          padding: 0px 0px 120px 0px
+          padding: 0px 0px 80px 0px
           overflow: hidden
           .block__news-left
             display: none
@@ -994,13 +996,12 @@ section.info_cards
             width: 100%
             display: block
             .swiper-wrapper
-              height: 217px
+
               .swiper-slide
-                height: 217px
+
                 .block__news-card
                   max-width: none
                   width: 100%
-                  height: 250px
                   border: 1px solid #F1F1F1
                   box-sizing: border-box
                   border-radius: 10px
@@ -1046,7 +1047,7 @@ section.info_cards
 
             .swiper-pagination
               position: absolute
-              bottom: -80px
+              bottom: -40px
               margin-bottom: 0
 
               .swiper-pagination-bullet
@@ -1057,7 +1058,6 @@ section.info_cards
 
       .block__news-right
         display: none
-
 
 
     .block__ads
@@ -1086,7 +1086,8 @@ section.info_cards
       overflow: hidden
       position: relative
       padding-bottom: 40px
-      max-width: 320px
+      max-width: none
+      width: 100%
       margin-left: auto
       margin-right: auto
 
@@ -1100,7 +1101,6 @@ section.info_cards
             width: 100%
             min-width: 140px
             margin: 0 auto
-            height: 250px
             .block__ads__card-img-mobile
               a
                 img
@@ -1194,3 +1194,56 @@ section.info_cards
 
     .block__ads-title
       color: #002543
+
+
+@media screen and (max-width: 425px)
+  .l-container
+    section.news
+      width: 425px
+@media screen and (max-width: 400px)
+  .l-container
+    section.news
+      width: 400px
+@media screen and (max-width: 375px)
+  .l-container
+    section.news
+      width: 375px
+@media screen and (max-width: 360px)
+  .l-container
+    section.news
+      width: 100%
+@media screen and (max-width: 340px)
+  .l-container
+    section.news
+      width: 340px
+@media screen and (max-width: 320px)
+  .l-container
+    section.news
+      width: 290px
+
+
+
+@media screen and (max-width: 425px)
+  .l-container
+    section.ads
+      width: 425px
+@media screen and (max-width: 400px)
+  .l-container
+    section.ads
+      width: 400px
+@media screen and (max-width: 375px)
+  .l-container
+    section.ads
+      width: 375px
+@media screen and (max-width: 360px)
+  .l-container
+    section.ads
+      width: 360px
+@media screen and (max-width: 340px)
+  .l-container
+    section.ads
+      width: 340px
+@media screen and (max-width: 320px)
+  .l-container
+    section.ads
+      width: 290px
