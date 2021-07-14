@@ -159,11 +159,12 @@ header
     display: none
 
   .l-header-top__interactions-btn
+    min-width: 40px
     width: 40px
     height: 40px
     background: #F1F1F1
     border-radius: 10px
-    margin-left: 35px
+    // margin-left: 35px
     position: relative
     display: flex
     justify-content: center
@@ -355,8 +356,9 @@ header
     line-height: 8px
     a
       color: #002543
-
-@include mobile
+  .l-header-top__interactions
+    width: 100%
+  //media mobile
   .l-header-top__interactions-btn
     margin-left: 0px
 
@@ -378,7 +380,7 @@ header
     .l-header-middle__logo
       display: flex
       justify-content: center
-      width: 70%
+      // width: 70%
       img
         width: 33px
         height: 33px
@@ -395,5 +397,5 @@ header
     .l-interaction__language
       display: flex
 
-  .l-header-grid
-    padding: 0px 15px 0px 15px
+  // .l-header-grid
+  //   padding: 0px 15px 0px 15px

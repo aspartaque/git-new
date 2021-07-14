@@ -27,8 +27,7 @@ html(lang="ru")
     //- script(src="./js/gsap.min.js")
     //- script(src="./js/hystmodal.min.js")
     //- script(src="./js/dynamicAdapt.js")
-    
-    
+
     script(src="./js/main.js")
 
   body
@@ -40,17 +39,16 @@ html(lang="ru")
 
     script.
       $(document).foundation();
-            
     script.
-      var swiper = new Swiper(".swiper-container", {
+      var swiper = new Swiper('.swiper-container', {
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
         loop: true,
       });
-      
-    script.
+    
+    //script.
       var swiper = new Swiper(".swiper-container-mobile__news", {
         slidesPerView: 2,
         spaceBetween: 10,
@@ -60,24 +58,32 @@ html(lang="ru")
         },
         loop: false,
       });
-          
+
     script.
-      var swiper = new Swiper(".block__ads-row-mobile", {
+      var swiper = new Swiper('.l-slider-main', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        loop: true,
+      });
+    script.
+      var swiper = new Swiper('.block__ads-row-mobile', {
         slidesPerView: 2,
         spaceBetween: 10,
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
         loop: false,
       });
-      
+    
     script.
-      var swiper = new Swiper(".block__info-row-mobile", {
+      var swiper = new Swiper('.block__info-row-mobile', {
         slidesPerView: 1,
         spaceBetween: 10,
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
         loop: false,
