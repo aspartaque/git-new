@@ -168,7 +168,7 @@
           color: #188ffb
 
   .block__card-button
-    margin-top: 20px
+    margin-top: 10px
     max-width: 200px
     width: 100%
     height: 50px
@@ -227,7 +227,7 @@
 
       .block__news-card
         // width: 640px
-        // height: 92%
+        height: 100%
         background: #FFFFFF
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
         border-radius: 20px
@@ -271,6 +271,7 @@
               font-size: 18px
               line-height: 17px
               color: #FFFFFF
+              white-space: nowrap
             svg
               fill: white
               margin-right: 10px
@@ -318,6 +319,7 @@
             margin-top: 0
           &:last-child
             border-bottom: none
+            padding: 0
 
           .block__news__content-date
             margin-bottom: 20px
@@ -830,8 +832,16 @@
             height: 355px
             padding: 30px 0px 20px 0px
             position: relative
-            margin-left: auto
-            margin-right: auto
+            &:nth-of-type(1)
+              margin-left: auto
+              margin-right: 0
+            &:nth-of-type(3)
+              margin-left: auto
+              margin-right: 0
+            &:nth-of-type(2)
+              margin-right: auto
+            &:nth-of-type(4)
+              margin-right: auto
             .block__card-img
             .block__card-title
               margin-top: 10px
@@ -1245,7 +1255,8 @@
 
     .block__ads-title
       color: #002543
-
+  .l-index-announcing
+    padding-top: 40px
 
 @media screen and (max-width: 425px)
   .l-container
