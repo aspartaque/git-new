@@ -7,6 +7,10 @@ html(lang="ru")
     title ВШМ - сайт
 
     link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(
+      rel="stylesheet",
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+    )
     link(rel="stylesheet", href="./fonts/stylesheet.css")
     link(rel="stylesheet", href="./css/normalize.css")
     link(rel="stylesheet", href="./css/foundation.min.css")
@@ -49,16 +53,16 @@ html(lang="ru")
       });
     
     script.
-      var swiper = new Swiper(".swiper-container-mobile__news", {
+      var swiper = new Swiper('.swiper-container-mobile__news', {
         slidesPerView: 2,
         spaceBetween: 10,
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
         loop: false,
       });
-
+    
     script.
       var swiper = new Swiper('.l-slider-main', {
         pagination: {
